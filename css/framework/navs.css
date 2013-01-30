@@ -1,0 +1,57 @@
+/* --------------------------------------------
+	НАВИГАЦИЯ
+-------------------------------------------- */
+
+.nav 		{ margin-bottom: 20px; overflow: hidden; zoom: 1; }
+.nav li 	{ float: left; }
+.nav li a 	{ display: block; }
+
+
+/* Nav Main */
+.nav.nav-main  				{  }
+.nav.nav-main li 			{ margin-right: 10px; }
+.nav.nav-main li a 			{  }
+.nav.nav-main li a:hover 	{  }
+.nav.nav-main li.active a 	{ color: #333; }
+
+
+/* Nav Menu */
+.nav.nav-menu 				{ float: left; position: relative; line-height: 28px; }
+.nav.nav-menu li 			{ margin-right: 10px; }
+.nav.nav-menu li a 			{  }
+.nav.nav-menu li a:hover 	{  }
+.nav.nav-menu li.active a 	{ color: #333; }
+
+
+/* Nav Pills */
+.nav.nav-pills 				{  }
+.nav.nav-pills li 			{ margin-right: 5px; }
+.nav.nav-pills li a 		{ padding: 4px 8px; background: #f0f0f0; color: #777; font-size: 11px; line-height: 13px; text-decoration: none; }
+.nav.nav-pills li a:hover 	{ background: #ddd; }
+.nav.nav-pills li.active a 	{ background-color: #007fff; color: #ffffff; }
+
+
+/* Userbar */
+.nav.nav-userbar 			{ margin-bottom: 0; }
+.nav.nav-userbar li 		{ margin-left: 10px; }
+.nav.nav-userbar li a 		{ font-size: 12px; line-height: 28px; }
+
+
+/* Nav Profile (block) */
+.nav.nav-profile 				{  }
+.nav.nav-profile li 			{ float: none; margin-bottom: 2px; margin-right: 0; }
+.nav.nav-profile li a 			{ padding: 7px 12px; font-size: 12px; }
+.nav.nav-profile li a:hover 	{  }
+.nav.nav-profile li.active a 	{  }
+
+
+
+/* Dropdown */
+.dropdown-menu 						{ position: absolute; top: 32px; overflow: hidden; background: #fff; border: 1px solid #eee; min-width: 150px; -webkit-box-shadow: 0 0 10px rgba(0,0,0,.1); box-shadow: 0 0 10px rgba(0,0,0,.1); }
+.dropdown-menu li 					{ font-size: 14px; line-height: 1em; }
+.dropdown-menu li a 				{ display: block; padding: 10px 15px; }
+.dropdown-menu li a:hover 			{ background: #fafafa; }
+.dropdown-menu li.active a 			{ color: #999; }
+.dropdown-menu li.active a:hover 	{ cursor: default; }
+
+.dropdown-create h2 a 				{ text-transform: lowercase; }
