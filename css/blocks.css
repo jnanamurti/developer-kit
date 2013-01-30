@@ -1,0 +1,57 @@
+/* -------------------------------------------------------------------
+	БЛОКИ
+------------------------------------------------------------------- */
+
+.block 					{ padding: 20px; margin-bottom: 30px; border: 1px solid #eee; }
+.block:last-child 		{ margin-bottom: 0 !important; }
+.sidebar-left .block 	{ margin-bottom: 10px; }
+
+.block .block-header 				{ margin-bottom: 15px; position: relative; }
+.block .block-header h3 				{ font-size: 22px; line-height: 1em; }
+.block .block-header h3 a 				{ text-decoration: none; color: #333; }
+.block .block-content 				{  }
+.block footer 							{ margin-top: 15px; font-size: 11px; }
+
+.block .max-height-200 		{ overflow: auto; max-height: 200px; _height: expression( this.scrollHeight > 200 ? "200px" : "auto" ); position: relative; }
+
+
+/* Block Type - Stream */
+.block .block-update 		{ position: absolute; top: 2px; right: 0; width: 16px; height: 16px; background: url(../images/update.gif) no-repeat; cursor: pointer; opacity: .3; }
+.block .block-update:hover 	{ opacity: .5; }
+.block .block-update.active 	{ background-position: -16px 0; opacity: .5; }
+
+
+/* Block Type - Activity Settings */
+.block.block-type-activity p 		{ margin-bottom: 15px; }
+.block.block-type-activity ul li 	{ margin-bottom: 5px; }
+.block.block-type-activity .note 	{ display: block; margin-bottom: 15px; color: #aaa; }
+
+
+/* Block Type - Profile */
+.block.block-type-profile 							{ border: none; padding: 0; }
+.block.block-type-profile .profile-photo-wrapper 	{ position: relative; min-height: 50px; }
+.block.block-type-profile .profile-photo 			{ vertical-align: top; }
+.block.block-type-profile .status 					{ position: absolute; top: 5px; left: 5px; padding: 0 5px; font-size: 11px; }
+.block.block-type-profile .status.status-online 	{ background: #393; color: #fff; }
+.block.block-type-profile .status.status-offline 	{ background: #333; color: #fff; opacity: .5; filter: alpha(opacity=50); }
+.block.block-type-profile .upload-photo 			{ padding: 7px 10px 10px; background: #f7f7f7; }
+
+.block.block-type-profile-note	 			{ background: #ffc; border: 1px solid #fc6; }
+.block.block-type-profile-note p 			{ margin-bottom: 10px; }
+.block.block-type-profile-note .actions 	{ margin-bottom: 0; }
+
+.block.block-type-profile-nav 				{ border: none; padding: 0; }
+
+.block.block-type-profile-actions .block-content 		{  }
+.block.block-type-profile-actions ul li					{ margin-bottom: 5px; }
+.block.block-type-profile-actions ul li:last-child		{ margin-bottom: 0; }
+.block.block-type-profile-actions ul li a.followed		{ color: #c00; }
+
+
+/* Block Type - Foldable */
+.block.block-type-foldable { background: #f9f9f9; }
+.block.block-type-foldable .block-header { margin: 0; }
+.block.block-type-foldable .block-content { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; }
+
+
+.block.block-type-blog .block-content { color: #999; font-size: 11px; }
