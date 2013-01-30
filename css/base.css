@@ -8,7 +8,7 @@
 #header .site-name { margin: 0 0 5px; font-size: 30px; line-height: 1em; }
 #header .site-name a{ text-decoration: none; }
 #header .site-name a:hover { color: #333; }
-#header .site-description { color: #999; }
+#header .site-description { color: #999; font-size: 12px; }
 
 
 /* Навигация

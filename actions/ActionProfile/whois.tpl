@@ -22,7 +22,7 @@
 {assign var="aUserFieldValues" value=$oUserProfile->getUserFieldValues(true,array(''))}
 
 {if $oUserProfile->getProfileSex()!='other' || $oUserProfile->getProfileBirthday() || $oGeoTarget || $oUserProfile->getProfileAbout() || count($aUserFieldValues)}
-	<h2 class="header-table">{$aLang.profile_privat}</h2>
+	<h4 class="header-table">{$aLang.profile_privat}</h4>
 	
 	
 	<table class="table table-profile-info">		
@@ -80,7 +80,7 @@
 
 {assign var="aUserFieldContactValues" value=$oUserProfile->getUserFieldValues(true,array('contact'))}
 {if $aUserFieldContactValues}
-	<h2 class="header-table">{$aLang.profile_contacts}</h2>
+	<h4 class="header-table">{$aLang.profile_contacts}</h4>
 	
 	<table class="table table-profile-info">
 		{foreach from=$aUserFieldContactValues item=oField}
@@ -95,7 +95,7 @@
 
 {assign var="aUserFieldContactValues" value=$oUserProfile->getUserFieldValues(true,array('social'))}
 {if $aUserFieldContactValues}
-	<h2 class="header-table">{$aLang.profile_social}</h2>
+	<h4 class="header-table">{$aLang.profile_social}</h4>
 	
 	<table class="table table-profile-info">
 		{foreach from=$aUserFieldContactValues item=oField}
@@ -208,7 +208,7 @@
 
 
 {if $aUsersFriend}
-	<h2 class="header-table mb-15"><a href="{$oUserProfile->getUserWebPath()}friends/">{$aLang.profile_friends}</a> ({$iCountFriendsUser})</h2>
+	<h4 class="header-table mb-15"><a href="{$oUserProfile->getUserWebPath()}friends/">{$aLang.profile_friends}</a> ({$iCountFriendsUser})</h4>
 	
 	{include file='user_list_avatar.tpl' aUsersList=$aUsersFriend}
 {/if}

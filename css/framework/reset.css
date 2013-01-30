@@ -125,10 +125,10 @@ a:active {
  */
 
 h1, h2, h3, h4, h5, h6 {
-	font-size: 13px;
-	line-height: 1.6em;
+	margin: 0 0 10px 0;
 	font-weight: normal;
-	margin: 0;
+	line-height: 20px;
+	color: #080808;
 }
 
 /*
@@ -175,7 +175,7 @@ mark {
 
 p,
 pre {
-	margin: 0;
+	margin: 0 0 10px;
 }
 
 /*
@@ -219,7 +219,7 @@ q:after {
 }
 
 small {
-	font-size: 75%;
+	font-size: 85%;
 }
 
 /*
@@ -256,7 +256,7 @@ dl,
 menu,
 ol,
 ul {
-	margin: 0 0;
+	margin: 0 0 0 0;
 }
 
 dd {

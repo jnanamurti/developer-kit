@@ -3,7 +3,6 @@
 ------------------------------------------------------------------- */
 
 body {
-	margin: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -14,27 +13,34 @@ body {
 
 /* Ссылки
 ---------------------------------------------------- */
-a 					{ color: #369; }
-a:hover 			{ text-decoration: none; }
+a 					{ color: #007fff; text-decoration: none; }
+a:hover 			{ color: #0066cc; text-decoration: underline; }
 
-a.link-dashed 		{ border-bottom: 1px dashed #369; text-decoration: none; }
-a.link-dashed:hover { color: #939; border-color: #939; }
+a.link-dashed 		{ border-bottom: 1px dashed #007fff; }
+a.link-dashed:hover { color: #0066cc; border-color: #0066cc; }
 
-a.link-dotted 		{ border-bottom: 1px dotted #369; text-decoration: none; }
-a.link-dotted:hover { color: #939; border-color: #939; }
+a.link-dotted 		{ border-bottom: 1px dotted #007fff; }
+a.link-dotted:hover { color: #0066cc; border-color: #0066cc; }
 
-a.edit 				{ color: #393; }
-a.delete 			{ color: #c00; }
+a.edit 				{ color: #3fb618; }
+a.delete 			{ color: #ff0039; }
 
 .text a:visited 	{ color: #939; }
 
 
 /* Заголовки
 ---------------------------------------------------- */
-h2.page-header 		{ font-size: 26px; line-height: 1em; margin-bottom: 20px; }
-h2.page-header span { color: #aaa; }
+h1 { font-size: 26px; line-height: 30px; }
+h2 { font-size: 24px; line-height: 28px; }
+h3 { font-size: 22px; line-height: 26px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
 
-h2.header-table 	{ margin-bottom: 0; border-bottom: 1px solid #eee; padding-bottom: 5px; font-size: 18px; }
+.page-header 		{ padding-bottom: 9px; margin: 0 0 20px; border-bottom: 1px solid #eeeeee; }
+.page-header span 	{ color: #aaa; }
+
+.header-table 		{ padding-bottom: 5px; margin: 0; border-bottom: 1px solid #eeeeee; }
 
 
 

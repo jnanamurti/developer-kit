@@ -58,7 +58,7 @@ $config['head']['default']['css'] = array(
 	"___path.static.skin___/themes/___view.theme___/style.css",
 	
 	/* Print */
-	"___path.static.skin___/css/print.css",
+	"___path.static.skin___/css/framework/print.css",
 );
 
 

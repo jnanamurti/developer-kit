@@ -2,9 +2,10 @@
 	НАВИГАЦИЯ
 -------------------------------------------- */
 
-.nav 		{ margin-bottom: 20px; overflow: hidden; zoom: 1; }
-.nav li 	{ float: left; }
-.nav li a 	{ display: block; }
+.nav 				{ margin-bottom: 20px; overflow: hidden; zoom: 1; }
+.nav li 			{ float: left; line-height: 20px; }
+.nav li a 			{ display: block; }
+.nav li a:hover 	{ text-decoration: none; }
 
 
 /* Nav Main */
@@ -24,10 +25,8 @@
 
 
 /* Nav Pills */
-.nav.nav-pills 				{  }
-.nav.nav-pills li 			{ margin-right: 5px; }
-.nav.nav-pills li a 		{ padding: 8px 12px; background-color: #dfdfdf; color: #000000; line-height: 14px; text-decoration: none; }
-.nav.nav-pills li a:hover 	{ background: #ddd; }
+.nav.nav-pills li a 		{ font-size: 11px; color: #000000; line-height: 13px; padding: 6px 10px; margin-right: 2px; background-color: #dfdfdf; }
+.nav.nav-pills li a:hover 	{ background-color: #000000; color: #ffffff; }
 .nav.nav-pills li.active a 	{ background-color: #007fff; color: #ffffff; }
 
 
