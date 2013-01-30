@@ -26,7 +26,7 @@
 /* Nav Pills */
 .nav.nav-pills 				{  }
 .nav.nav-pills li 			{ margin-right: 5px; }
-.nav.nav-pills li a 		{ padding: 4px 8px; background: #f0f0f0; color: #777; font-size: 11px; line-height: 13px; text-decoration: none; }
+.nav.nav-pills li a 		{ padding: 8px 12px; background-color: #dfdfdf; color: #000000; line-height: 14px; text-decoration: none; }
 .nav.nav-pills li a:hover 	{ background: #ddd; }
 .nav.nav-pills li.active a 	{ background-color: #007fff; color: #ffffff; }
 
