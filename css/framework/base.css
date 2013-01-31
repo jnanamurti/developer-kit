@@ -48,4 +48,4 @@ h6 { font-size: 17px; }
 .pull-left 	{ float: left; }
 .pull-right { float: right; }
 
-.well { padding: 8px 0 8px 0 !important; background-color: #eeeeee; margin: 0 0 20px 0; min-height: 20px; }
+.well { padding: 8px 0 8px 0 !important; background-color: #eeeeee; min-height: 20px; }

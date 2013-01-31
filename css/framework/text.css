@@ -8,6 +8,7 @@
 .text a:hover 	{ text-decoration: none; }
 
 
+
 .text abbr[title] { border-bottom: 1px dotted; }
 .text b, .text strong { font-weight: bold; }
 .text blockquote { margin: 0; background: #fafafa; color: #555; font-style: italic; padding: 10px 15px; clear: both; border-left: 3px solid #eee; }
