@@ -1,5 +1,6 @@
 {hook run='profile_sidebar_begin' oUserProfile=$oUserProfile}
 
+
 <section class="block block-type-profile">
 	<div class="profile-photo-wrapper">
 		<div class="status {if $oUserProfile->isOnline()}status-online{else}status-offline{/if}">{if $oUserProfile->isOnline()}{$aLang.user_status_online}{else}{$aLang.user_status_offline}{/if}</div>
@@ -35,7 +36,6 @@
 </section>
 
 
-
 {if $oUserCurrent && $oUserCurrent->getId()!=$oUserProfile->getId()}
 	<script type="text/javascript">
 		jQuery(function($){
@@ -61,8 +61,9 @@
 
 {hook run='profile_sidebar_menu_before' oUserProfile=$oUserProfile}
 
-<section class="block block-type-profile-nav">
-	<ul class="nav nav-pills nav-profile">
+
+<section class="block block-type-profile-nav well">
+	<ul class="nav nav-list">
 		{hook run='profile_sidebar_menu_item_first' oUserProfile=$oUserProfile}
 		<li {if $sAction=='profile' && ($aParams[0]=='whois' or $aParams[0]=='')}class="active"{/if}><a href="{$oUserProfile->getUserWebPath()}">{$aLang.user_menu_profile_whois}</a></li>
 		<li {if $sAction=='profile' && $aParams[0]=='wall'}class="active"{/if}><a href="{$oUserProfile->getUserWebPath()}wall/">{$aLang.user_menu_profile_wall}{if ($iCountWallUser)>0} ({$iCountWallUser}){/if}</a></li>
@@ -72,12 +73,14 @@
 		<li {if $sAction=='profile' && $aParams[0]=='stream'}class="active"{/if}><a href="{$oUserProfile->getUserWebPath()}stream/">{$aLang.user_menu_profile_stream}</a></li>
 		
 		{if $oUserCurrent and $oUserCurrent->getId() == $oUserProfile->getId()}
+			<li class="divider"></li>
 			<li {if $sAction=='talk'}class="active"{/if}><a href="{router page='talk'}">{$aLang.talk_menu_inbox}{if $iUserCurrentCountTalkNew} ({$iUserCurrentCountTalkNew}){/if}</a></li>
 			<li {if $sAction=='settings'}class="active"{/if}><a href="{router page='settings'}">{$aLang.settings_menu}</a></li>
 		{/if}
 		{hook run='profile_sidebar_menu_item_last' oUserProfile=$oUserProfile}
 	</ul>
 </section>
+
 
 {if $oUserCurrent && $oUserCurrent->getId() != $oUserProfile->getId()}
 	<section class="block block-type-profile-note">
@@ -109,5 +112,6 @@
 		<a href="#" onclick="return ls.usernote.showForm();" id="usernote-button-add" class="link-dotted" {if $oUserNote}style="display:none;"{/if}>{$aLang.user_note_add}</a>
 	</section>
 {/if}
+
 
 {hook run='profile_sidebar_end' oUserProfile=$oUserProfile}

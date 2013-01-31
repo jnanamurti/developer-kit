@@ -29,23 +29,7 @@
 .favourite 			{ display: inline-block; width: 14px; height: 14px; vertical-align: text-top; background: url(../images/icons.png) -144px 0 no-repeat; opacity: .3; filter: alpha(opacity=30); cursor: pointer; }
 .favourite.active 	{ background-position: -120px 0; }
 .favourite:hover 	{ opacity: .5; filter: alpha(opacity=50); }
-.favourite-count    	{ color: #aaa; margin-left: 0; }
-
-
-
-/* Пагинация 
----------------------------------------------------- */
-.pagination 					{ overflow: hidden; }
-.pagination ul 				{ float: left; margin-top: 5px; overflow: hidden; zoom: 1; line-height: 1em; }
-.pagination ul li 				{ float: left; margin-right: 5px; }
-.pagination ul li span,
-.pagination ul li a 			{ float: left; padding: 4px 6px; }
-.pagination ul li a:hover 		{  }
-.pagination ul li.active span 	{ color: #999; border: 1px solid #eee; text-decoration: none; }
-.pagination ul li span 			{ color: #999; }
-.pagination ul li.prev span,
-.pagination ul li.prev a 		{ padding-left: 0; }
-.pagination ul li.next 			{ margin-right: 50px; }
+.favourite-count    { color: #aaa; margin-left: 0; }
 
 
 /* Actions 
@@ -58,6 +42,9 @@
 .actions li a.link-dotted:hover {  }
 
 
+/* Пагинация 
+---------------------------------------------------- */
+.pagination ul li.next 			{ margin-right: 48px; }
 
 
 /* Toolbar 

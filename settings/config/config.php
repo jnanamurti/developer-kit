@@ -28,11 +28,13 @@ $config['head']['default']['css'] = array(
 	/* Framework */
 	"___path.static.skin___/css/framework/reset.css",
 	"___path.static.skin___/css/framework/base.css",
+	"___path.static.skin___/css/framework/common.css",
 	"___path.static.skin___/css/framework/text.css",
 	"___path.static.skin___/css/framework/forms.css",
 	"___path.static.skin___/css/framework/buttons.css",
 	"___path.static.skin___/css/framework/navs.css",
 	"___path.static.skin___/css/framework/tables.css",
+
 
 	/* Structure */
 	"___path.static.skin___/css/base.css",
