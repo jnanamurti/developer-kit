@@ -23,6 +23,32 @@
 .nav-list .divider 			{ background-color: #bbbbbb; height: 1px; margin: 9px 1px; overflow: hidden; }
 
 
+/* Navbar */
+.navbar 					{ margin-bottom: 20px; overflow: visible; *position: relative; *z-index: 2; }
+
+.navbar-inner 				{ min-height: 40px; padding: 0 20px 0 20px; background-color: #080808; }
+.navbar-inner:before,
+.navbar-inner:after 		{ display: table; line-height: 0; content: ""; }
+.navbar-inner:after 		{ clear: both; }
+
+.navbar .container 			{ width: auto; }
+
+.navbar .nav 				{ position: relative; left: 0; display: block; float: left; margin: 0 10px 0 0; }
+.navbar .nav.pull-right 	{ float: right; margin-right: 0; }
+
+.navbar .nav > li 			{ float: left; }
+
+.navbar .nav > li > a 		{ float: none; padding: 10px 15px 10px; color: #ffffff; text-shadow: 0 1px 0 #080808; }
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover { color: #bbbbbb; background-color: rgba (0, 0, 0, 0.05); }
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus { background-color: rgba(0, 0, 0, 0.05); }
+
+.navbar-search { position: relative; float: left; margin-top: 5px; margin-bottom: 0; }
+
+
 
 /* Nav Main */
 .nav.nav-main  				{  }
@@ -40,10 +66,7 @@
 .nav.nav-menu li.active a 	{ color: #333; }
 
 
-/* Userbar */
-.nav.nav-userbar 			{ margin-bottom: 0; }
-.nav.nav-userbar li 		{ margin-left: 10px; }
-.nav.nav-userbar li a 		{ font-size: 12px; line-height: 28px; }
+
 
 
 

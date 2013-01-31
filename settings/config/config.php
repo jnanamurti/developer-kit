@@ -5,21 +5,6 @@ $config = array();
 $config['view']['theme'] = 'default';
 
 
-/* Grid type:
- * 
- * fluid - резина
- * fixed - фиксированная ширина
- */
-$config['view']['grid']['type'] = 'fixed';
-
-/* Fluid settings */
-$config['view']['grid']['fluid_min_width'] = 960;
-$config['view']['grid']['fluid_max_width'] = 1400;
-
-/* Fixed settings */
-$config['view']['grid']['fixed_width'] = 960;
-
-
 
 $config['head']['default']['js'] = Config::Get('head.default.js');
 $config['head']['default']['js'][] = '___path.static.skin___/js/template.js';
@@ -44,6 +29,7 @@ $config['head']['default']['css'] = array(
 	"___path.root.engine_lib___/external/prettify/prettify.css",
 	"___path.static.skin___/css/grid.css",
 	"___path.static.skin___/css/common.css",
+	"___path.static.skin___/css/navs.css",
 	"___path.static.skin___/css/icons.css",
 	"___path.static.skin___/css/topic.css",
 	"___path.static.skin___/css/comments.css",

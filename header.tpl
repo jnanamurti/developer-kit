@@ -65,22 +65,6 @@
 	</script>
 	
 	
-	{if {cfg name='view.grid.type'} == 'fluid'}
-		<style>
-			#container {
-				min-width: {cfg name='view.grid.fluid_min_width'}px;
-				max-width: {cfg name='view.grid.fluid_max_width'}px;
-			}
-		</style>
-	{else}
-		<style>
-			#container {
-				width: {cfg name='view.grid.fixed_width'}px;
-			}
-		</style>
-	{/if}
-	
-	
 	{hook run='html_head_end'}
 </head>
 
@@ -118,7 +102,7 @@
 	{/if}
 	
 
-	<div id="container" class="{hook run='container_class'}">
+	<div class="container {hook run='container_class'}">
 		{include file='header_top.tpl'}
 		{include file='nav.tpl'}
 
