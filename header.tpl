@@ -89,11 +89,9 @@
 
 
 
-
 <body class="{$body_classes} width-{cfg name='view.grid.type'}">
 	{hook run='body_begin'}
-	
-	
+		
 	{if $oUserCurrent}
 		{include file='window_write.tpl'}
 		{include file='window_favourite_form_tags.tpl'}
@@ -101,7 +99,8 @@
 		{include file='window_login.tpl'}
 	{/if}
 	
-
+	{include file='navbar.tpl'}
+	
 	<div class="container {hook run='container_class'}">
 		{include file='header_top.tpl'}
 		{include file='nav.tpl'}
