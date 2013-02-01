@@ -105,13 +105,14 @@
 	
 	<div class="container {hook run='container_class'}">
 
-		<div id="wrapper" class="{hook run='wrapper_class'}">
+		<div class="wrapper row {hook run='wrapper_class'}">
 			{if !$noSidebar && $sidebarPosition == 'left'}
 				{include file='sidebar.tpl'}
 			{/if}
 		
-			<div id="content" role="main" 
-				class="{if $noSidebar}content-full-width{/if} 
+			<div role="main" 
+				class="content span8 
+					   {if $noSidebar}content-full-width{/if} 
 					   {if $sidebarPosition == 'left'}content-right{/if}"
 				{if $sMenuItemSelect=='profile'}itemscope itemtype="http://data-vocabulary.org/Person"{/if}>
 				

@@ -16,7 +16,7 @@
 .text b, .text strong { font-weight: bold; }
 .text blockquote { margin: 0; background: #fafafa; color: #555; font-style: italic; padding: 10px 15px; clear: both; border-left: 3px solid #eee; }
 .text dfn { font-style: italic; }
-.text hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+.text hr { display: block; height: 1px; border: 0; border-top: 1px solid #eeeeee; margin: 1em 0; padding: 0; }
 .text ins { background: #ff9; color: #000; text-decoration: none; }
 .text mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 

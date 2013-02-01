@@ -1,3 +1,3 @@
-<aside id="sidebar" {if $sidebarPosition == 'left'}class="sidebar-left"{/if}>
+<aside class="sidebar span4 {if $sidebarPosition == 'left'}sidebar-left{/if}">
 	{include file='blocks.tpl' group='right'}
 </aside>
