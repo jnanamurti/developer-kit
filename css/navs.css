@@ -4,3 +4,11 @@
 
 /* Navbar */
 .navbar .nav > li > a img.avatar { width: 20px; height: 20px; vertical-align: top; }
+
+
+/* Nav Main */
+.nav.nav-main 				{ margin-top: 10px; }
+.nav.nav-main li 			{ float: left; margin-right: 15px; }
+.nav.nav-main li a 			{ font-size: 16px; text-decoration: underline; }
+.nav.nav-main li a:hover 	{ text-decoration: none; }
+.nav.nav-main li.active a 	{ color: #ffffff; text-decoration: underline; }

@@ -2,14 +2,22 @@
 	СЕТКА
 -------------------------------------------- */
 
+.container 			{ margin-right: auto; margin-left: auto; *zoom: 1; }
+.container:before,
+.container:after 	{ display: table; line-height: 0; content: ""; }
+.container:after 	{ clear: both; }
+
 .container,
 .navbar-static-top .container,
-.navbar-fixed-top .container { margin: 0 auto; width: 940px; }
+.navbar-fixed-top .container { width: 940px; }
+
+
+.header 			{ position: relative; padding: 40px 0; }
+.header .container 	{ position: relative; z-index: 2; }
 
 
 
-#header 	{ padding: 30px 0; position: relative; overflow: hidden; }
-#nav 		{ margin: 0 0 10px; overflow: hidden; }
+#nav 		{ margin: 0 0 40px; overflow: hidden; }
 #wrapper 	{ margin: 0 0 30px; background: #fff; overflow: hidden; zoom: 1; }
 #content 	{ float: left; width: 66%; margin-right: 2%; background: #fff; position: relative; }
 #sidebar	{ float: left; width: 32%; }
