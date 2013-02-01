@@ -5,10 +5,12 @@
 /* Navbar */
 .navbar .nav > li > a img.avatar { width: 20px; height: 20px; vertical-align: top; }
 
+.navbar-search 					{ position: relative; float: left; margin-top: 5px; margin-bottom: 0; }
+
 
 /* Nav Main */
 .nav.nav-main 				{ margin-top: 10px; }
-.nav.nav-main li 			{ float: left; margin-right: 15px; }
-.nav.nav-main li a 			{ font-size: 16px; text-decoration: underline; }
-.nav.nav-main li a:hover 	{ text-decoration: none; }
-.nav.nav-main li.active a 	{ color: #ffffff; text-decoration: underline; }
+.nav.nav-main li 			{ float: left; }
+.nav.nav-main li a 			{ padding: 6px 12px; margin-right: 6px; color: #ffffff; background-color: #007fff; }
+.nav.nav-main li a:hover,
+.nav.nav-main li.active a 	{ background-color: #0072e6; }

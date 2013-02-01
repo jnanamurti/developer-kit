@@ -9,7 +9,7 @@
 .pagination ul 					{ float: left; overflow: hidden; zoom: 1; }
 .pagination ul li 				{ display: inline; }
 .pagination ul li span,
-.pagination ul li a 			{ color: #080808; float: left; margin-right: 6px; padding: 4px 12px; background-color: #dfdfdf; text-decoration: none; }
+.pagination ul li a 			{ color: #555555; float: left; margin-right: 6px; padding: 4px 12px; background-color: #dfdfdf; text-decoration: none; }
 .pagination ul li a:hover 		{ color: #ffffff; background-color: #080808; }
 .pagination ul li.active span 	{ color: #ffffff; background-color: #007fff; }
 .pagination ul li span 			{ color: #999999; background-color: #eeeeee; }

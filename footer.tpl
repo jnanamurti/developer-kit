@@ -1,14 +1,17 @@
 			{hook run='content_end'}
 		</div> <!-- /content -->
 
-		
 		{if !$noSidebar && $sidebarPosition != 'left'}
 			{include file='sidebar.tpl'}
 		{/if}
 	</div> <!-- /wrapper -->
+	
+</div> <!-- /container -->
 
 	
-	<footer id="footer">
+<footer class="footer">
+	<div class="container">
+	
 		<div class="copyright">
 			{hook run='copyright'}
 			<br />
@@ -16,9 +19,11 @@
 		</div>
 		
 		{hook run='footer_end'}
-	</footer>
+		
+	</div>
+</footer>
 
-</div> <!-- /container -->
+
 
 {include file='toolbar.tpl'}
 
