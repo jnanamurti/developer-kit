@@ -1,4 +1,4 @@
-<table class="table table-users">
+<table class="table table-hover table-users">
 	{if $bUsersUseOrder}
 		<thead>
 			<tr>

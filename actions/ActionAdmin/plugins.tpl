@@ -6,7 +6,7 @@
 
 
 <form action="{router page='admin'}plugins/" method="post" id="form_plugins_list">
-	<table class="table table-plugins">
+	<table class="table table-hover table-plugins">
 		<thead>
 			<tr>
 				<th class="cell-checkbox"><input type="checkbox" name="" onclick="ls.tools.checkAll('form_plugins_checkbox', this, true);" /></th>
@@ -23,7 +23,7 @@
 				<tr {if $aPlugin.is_active}class="active"{/if}>
 					<td class="cell-checkbox"><input type="checkbox" name="plugin_del[{$aPlugin.code}]" class="form_plugins_checkbox" /></td>
 					<td>
-						<h3>{$aPlugin.property->name->data}</h3>
+						<h4>{$aPlugin.property->name->data}</h4>
 						{$aPlugin.property->description->data}
 					</td>
 					<td>{$aPlugin.property->version|escape:'html'}</td>

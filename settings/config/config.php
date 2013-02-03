@@ -30,6 +30,7 @@ $config['head']['default']['css'] = array(
 	"___path.static.skin___/css/common.css",
 	"___path.static.skin___/css/text.css",
 	"___path.static.skin___/css/navs.css",
+	"___path.static.skin___/css/tables.css",
 	"___path.static.skin___/css/icons.css",
 	"___path.static.skin___/css/topic.css",
 	"___path.static.skin___/css/comments.css",
