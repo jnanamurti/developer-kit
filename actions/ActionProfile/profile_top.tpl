@@ -15,7 +15,7 @@
 		<div class="count" id="user_skill_{$oUserProfile->getId()}">{$oUserProfile->getSkill()}</div>
 	</div>
 	
-	<h2 class="page-header user-login word-wrap {if !$oUserProfile->getProfileName()}no-user-name{/if}" itemprop="nickname">{$oUserProfile->getLogin()}</h2>
+	<h2 class="user-login word-wrap {if !$oUserProfile->getProfileName()}no-user-name{/if}" itemprop="nickname">{$oUserProfile->getLogin()}</h2>
 	
 	{if $oUserProfile->getProfileName()}
 		<p class="user-name" itemprop="name">{$oUserProfile->getProfileName()|escape:'html'}</p>

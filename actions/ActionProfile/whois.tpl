@@ -1,4 +1,3 @@
-{assign var="sidebarPosition" value='left'}
 {assign var="sMenuItemSelect" value='profile'}
 {include file='header.tpl' menu='people'}
 
@@ -22,7 +21,7 @@
 {assign var="aUserFieldValues" value=$oUserProfile->getUserFieldValues(true,array(''))}
 
 {if $oUserProfile->getProfileSex()!='other' || $oUserProfile->getProfileBirthday() || $oGeoTarget || $oUserProfile->getProfileAbout() || count($aUserFieldValues)}
-	<h4 class="header-table">{$aLang.profile_privat}</h4>
+	<h4>{$aLang.profile_privat}</h4>
 	
 	
 	<table class="table table-profile-info">		
@@ -80,7 +79,7 @@
 
 {assign var="aUserFieldContactValues" value=$oUserProfile->getUserFieldValues(true,array('contact'))}
 {if $aUserFieldContactValues}
-	<h4 class="header-table">{$aLang.profile_contacts}</h4>
+	<h4>{$aLang.profile_contacts}</h4>
 	
 	<table class="table table-profile-info">
 		{foreach from=$aUserFieldContactValues item=oField}
@@ -95,7 +94,7 @@
 
 {assign var="aUserFieldContactValues" value=$oUserProfile->getUserFieldValues(true,array('social'))}
 {if $aUserFieldContactValues}
-	<h4 class="header-table">{$aLang.profile_social}</h4>
+	<h4>{$aLang.profile_social}</h4>
 	
 	<table class="table table-profile-info">
 		{foreach from=$aUserFieldContactValues item=oField}
@@ -111,7 +110,7 @@
 {hook run='profile_whois_item' oUserProfile=$oUserProfile}
 
 
-<h2 class="header-table">{$aLang.profile_activity}</h2>
+<h2>{$aLang.profile_activity}</h2>
 
 <table class="table table-profile-info">
 
@@ -206,9 +205,8 @@
 </table>
 
 
-
 {if $aUsersFriend}
-	<h4 class="header-table mb-15"><a href="{$oUserProfile->getUserWebPath()}friends/">{$aLang.profile_friends}</a> ({$iCountFriendsUser})</h4>
+	<h4><a href="{$oUserProfile->getUserWebPath()}friends/">{$aLang.profile_friends}</a> ({$iCountFriendsUser})</h4>
 	
 	{include file='user_list_avatar.tpl' aUsersList=$aUsersFriend}
 {/if}

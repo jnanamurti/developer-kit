@@ -1,6 +1,4 @@
-{assign var="sidebarPosition" value='left'}
 {include file='header.tpl' menu='people'}
-
 
 
 {include file='actions/ActionProfile/profile_top.tpl'}
@@ -23,7 +21,6 @@
 
 
 {include file='paging.tpl' aPaging=$aPaging}
-
 
 
 {include file='footer.tpl'}

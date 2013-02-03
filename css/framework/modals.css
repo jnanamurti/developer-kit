@@ -1,0 +1,23 @@
+/* --------------------------------------------
+	ÃŒƒ¿À‹Õ€≈ Œ Õ¿
+-------------------------------------------- */
+
+.modal {
+    display: none;
+    
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    
+    width: 300px;
+    margin-left: -150px;
+	
+    background-color: #ffffff;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,.5); box-shadow: 0 0 15px rgba(0,0,0,.5);
+	overflow: hidden;
+}
+
+
+.modal .modal-header 	{ padding: 9px 30px; background-color: #f5f5f5; border-bottom: 1px solid #eeeeee; }
+.modal .modal-header h3 { margin: 0 20px 0 0; }
+.modal .modal-content 	{ padding: 30px; }

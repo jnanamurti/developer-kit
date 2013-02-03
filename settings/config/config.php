@@ -12,13 +12,13 @@ $config['head']['default']['js'][] = '___path.static.skin___/js/template.js';
 $config['head']['default']['css'] = array(
 	/* Framework */
 	"___path.static.skin___/css/framework/reset.css",
+	"___path.static.skin___/css/framework/grid.css",
 	"___path.static.skin___/css/framework/base.css",
 	"___path.static.skin___/css/framework/common.css",
-	"___path.static.skin___/css/framework/forms.css",
 	"___path.static.skin___/css/framework/buttons.css",
 	"___path.static.skin___/css/framework/navs.css",
 	"___path.static.skin___/css/framework/tables.css",
-
+	"___path.static.skin___/css/framework/modals.css",
 
 	/* Structure */
 	"___path.static.skin___/css/base.css",
@@ -28,6 +28,7 @@ $config['head']['default']['css'] = array(
 	"___path.root.engine_lib___/external/prettify/prettify.css",
 	"___path.static.skin___/css/grid.css",
 	"___path.static.skin___/css/common.css",
+	"___path.static.skin___/css/forms.css",
 	"___path.static.skin___/css/text.css",
 	"___path.static.skin___/css/navs.css",
 	"___path.static.skin___/css/tables.css",

@@ -1,6 +1,4 @@
-{assign var="sidebarPosition" value='left'}
 {include file='header.tpl' menu='people'}
-
 
 
 {include file='actions/ActionProfile/profile_top.tpl'}
@@ -13,7 +11,6 @@
 {/if}
 
 {include file='topic_list.tpl'}
-
 
 
 {include file='footer.tpl'}

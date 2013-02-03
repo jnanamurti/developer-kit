@@ -16,7 +16,7 @@
 
 .profile .strength 					{ float: right; }
 
-.profile .user-login 				{ width: 270px; margin-bottom: 5px; }
+.profile .user-login 				{ width: 270px; margin-bottom: 0; }
 .profile .user-login.no-user-name 	{ position: relative; top: 9px; }
 .profile .user-name 				{ color: #777; }
 

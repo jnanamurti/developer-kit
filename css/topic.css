@@ -6,7 +6,6 @@
 .topic:last-child { margin-bottom: 0; }
 
 /* Header */
-.topic .topic-header .topic-title 				{ margin-bottom: 20px; }
 .topic .topic-header .topic-title a 			{  }
 .topic .topic-header .topic-title i 			{ position: relative; top: 5px; cursor: help; }
 .topic .topic-header .topic-info 				{ margin-bottom: 15px; color: #999; font-size: 12px; }
