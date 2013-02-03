@@ -5,13 +5,31 @@
 body { padding-top: 40px; position: relative; }
 
 
+/* Ссылки
+---------------------------------------------------- */
+a.link-dashed 		{ border-bottom: 1px dashed #007fff; }
+a.link-dashed:hover { color: #0066cc; border-color: #0066cc; text-decoration: none; }
+
+a.link-dotted 		{ border-bottom: 1px dotted #007fff; }
+a.link-dotted:hover { color: #0066cc; border-color: #0066cc; text-decoration: none; }
+
+a.edit 				{ color: #3fb618; }
+a.delete 			{ color: #ff0039; }
+
+
+/* Заголовки
+---------------------------------------------------- */
+.page-header span 	{ color: #aaa; }
+
+.header-table 		{ padding-bottom: 5px; margin: 0; border-bottom: 1px solid #eeeeee; }
+
+
 /* Шапка сайта
 ---------------------------------------------------- */
 .header { color: #ffffff; background: #00baf0; }
 
-.header .site-info 			{ float: left; margin-right: 60px; }
-.header .site-name 			{ font-size: 40px; line-height: 1em; margin: 10px 0; }
-.header .site-name a 		{ text-decoration: none; color: #ffffff; }
+.header .site-name 		{ font-size: 40px; line-height: 1em; margin: 10px 0; }
+.header .site-name a 	{ text-decoration: none; color: #ffffff; }
 
 
 /* Навигация
@@ -19,7 +37,7 @@ body { padding-top: 40px; position: relative; }
 .navbar .nav > li > a.new-messages 			{ color: #ff7518; }
 .navbar .nav > li > a.new-messages:hover 	{ color: #3fb618; }
 
-.subnav .button-write { float: right; margin-top: 5px; }
+.subnav .button-write { margin-top: 5px; }
 
 
 /* Футер

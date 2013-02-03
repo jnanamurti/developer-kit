@@ -16,17 +16,6 @@ body {
 a 					{ color: #007fff; text-decoration: none; }
 a:hover 			{ color: #0066cc; text-decoration: underline; }
 
-a.link-dashed 		{ border-bottom: 1px dashed #007fff; }
-a.link-dashed:hover { color: #0066cc; border-color: #0066cc; text-decoration: none; }
-
-a.link-dotted 		{ border-bottom: 1px dotted #007fff; }
-a.link-dotted:hover { color: #0066cc; border-color: #0066cc; text-decoration: none; }
-
-a.edit 				{ color: #3fb618; }
-a.delete 			{ color: #ff0039; }
-
-.text a:visited 	{ color: #939; }
-
 
 /* Заголовки
 ---------------------------------------------------- */
@@ -37,14 +26,13 @@ h4 { font-size: 19px; }
 h5 { font-size: 18px; }
 h6 { font-size: 17px; }
 
-.page-header 		{ padding-bottom: 9px; margin: 0 0 20px; border-bottom: 1px solid #eeeeee; }
-.page-header span 	{ color: #aaa; }
-
-.header-table 		{ padding-bottom: 5px; margin: 0; border-bottom: 1px solid #eeeeee; }
+.page-header { padding-bottom: 9px; margin: 0 0 20px; border-bottom: 1px solid #eeeeee; }
 
 
 /* Разное
 ---------------------------------------------------- */
+.lead { margin-bottom: 20px; font-size: 18px; line-height: 30px; }
+
 .pull-left 	{ float: left; }
 .pull-right { float: right; }
 
