@@ -1,4 +1,14 @@
-/* Userbar */
-.nav.nav-userbar li.nav-userbar-username a 			{ position: relative; padding-left: 42px; font-weight: bold; color: #333; }
-.nav.nav-userbar li.nav-userbar-username .avatar 	{ position: absolute; top: 2px; left: 10px; }
-.nav.nav-userbar li .new-messages 					{ color: #393; }
+/* Navbar */
+.navbar .nav > li > a.new-messages 			{ color: #ff7518; }
+.navbar .nav > li > a.new-messages:hover 	{ color: #3fb618; }
+
+/* Table Blogs */
+.table.table-blogs { margin-bottom: 50px; }
+
+
+/* Table Users */
+.table.table-users { margin-bottom: 50px; }
+
+/* Table Profile Info */
+.table.table-profile-info 				{ margin-bottom: 40px; }
+.table.table-profile-info .cell-label 	{ color: #999999; }

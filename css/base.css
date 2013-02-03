@@ -34,9 +34,6 @@ a.delete 			{ color: #ff0039; }
 
 /* Навигация
 ---------------------------------------------------- */
-.navbar .nav > li > a.new-messages 			{ color: #ff7518; }
-.navbar .nav > li > a.new-messages:hover 	{ color: #3fb618; }
-
 .subnav .button-write { margin-top: 5px; }
 
 
