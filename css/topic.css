@@ -2,93 +2,88 @@
 	ТОПИК
 -------------------------------------------- */
 
-.topic 				{ overflow: hidden; zoom: 1; margin-bottom: 50px; }
+.topic 				{ overflow: hidden; zoom: 1; margin-bottom: 40px; }
 .topic:last-child 	{ margin-bottom: 0; }
 
 
 /* Header */
-.topic .topic-header .topic-title a 			{  }
 .topic .topic-header .topic-title i 			{ position: relative; top: 5px; cursor: help; }
-.topic .topic-header .topic-info 				{ margin-bottom: 15px; color: #999; font-size: 12px; }
-.topic .topic-header .topic-info time 			{ margin-right: 15px; }
-.topic .topic-header .topic-info .topic-blog 	{ margin-right: 15px; }
+.topic .topic-header .topic-info 				{ margin-bottom: 10px; color: #999999; font-size: 12px; }
+.topic .topic-header .topic-info .topic-blog,
+.topic .topic-header .topic-info time 			{ margin-right: 10px; }
 .topic .topic-header .topic-info .actions,
 .topic .topic-header .topic-info .actions li	{ display: inline; float: none; margin-bottom: 0; }
 .topic .topic-header .topic-info .actions li	{ margin-right: 10px; }
 
 
 /* Content */
-.topic .topic-content 		{ margin-bottom: 15px; }
-.topic .topic-content.text 	{  }
+.topic .topic-content 	{ margin-bottom: 10px; }
 
 
 /* Topic Link */
-.topic .topic-url 			{ margin-bottom: 15px; font-size: 11px; }
-.topic .topic-url a 		{ color: #393; }
+.topic .topic-url 		{ margin-bottom: 10px; }
+.topic .topic-url a 	{ color: #3fb618; }
 
 
 /* Tags */
-.topic .topic-footer .topic-tags 						{ margin: 0 0 10px; font-size: 11px; }
-.topic .topic-footer .topic-tags li 					{ display: inline; color: #999; }
+.topic .topic-footer .topic-tags 						{ margin-bottom: 10px; font-size: 12px; color: #999999; }
+.topic .topic-footer .topic-tags li 					{ display: inline; }
 .topic .topic-footer .topic-tags li.topic-tags-edit 	{ margin-left: 20px; }
-.topic .topic-footer .topic-tags li.topic-tags-user a 	{ color: #393; }
+.topic .topic-footer .topic-tags li.topic-tags-user a 	{ color: #3fb618; }
 
 
 /* Info */
-.topic .topic-footer .topic-info 			{ font-size: 11px; line-height: 14px; padding-top: 5px; overflow: hidden; border-top: 1px solid #eee; }
-.topic .topic-footer .topic-info li 		{ float: left; padding: 5px; margin-right: 10px; }
-.topic .topic-footer .topic-info li.vote 	{ float: right; margin-right: 0; padding-right: 0; }
-.topic .topic-footer .topic-info li.topic-info-author 	{ padding-left: 0; }
-
-.topic .topic-footer .topic-info li a 		{  }
-
-.topic .topic-footer .topic-info li.topic-info-author a 		{ color: #333; }
-.topic .topic-footer .topic-info li.topic-info-author a:hover 	{  }
-.topic .topic-footer .topic-info li.topic-info-comments a		{  }
-.topic .topic-footer .topic-info li.topic-info-comments a span 	{ color: #777; }
-.topic .topic-footer .topic-info li.topic-info-comments a:hover {  }
+.topic .topic-footer .topic-info 								{ font-size: 12px; line-height: 14px; padding-top: 5px; overflow: hidden; border-top: 1px solid #eeeeee; }
+.topic .topic-footer .topic-info li 							{ float: left; padding: 5px; margin-right: 10px; }
+.topic .topic-footer .topic-info li.vote 						{ float: right; padding-right: 0; margin-right: 0; }
+.topic .topic-footer .topic-info li.topic-info-author 			{ padding-left: 0; }
+.topic .topic-footer .topic-info li.topic-info-author a 		{ font-weight: bold; }
+.topic .topic-footer .topic-info li.topic-info-comments span 	{ color: #999999; }
 
 
 /* Share */
-.topic .topic-share { display: none; padding: 3px; margin-bottom: 10px; border: 1px solid #eee; }
+.topic .topic-share { display: none; padding: 3px; margin-bottom: 10px; border: 1px solid #eeeeee; }
 
 
 /* Poll */
-.topic .poll { margin-bottom: 15px; }
+.topic .poll { margin-bottom: 20px; }
 
-.topic .poll .poll-vote 				{ margin-bottom: 20px; margin-left: 0; list-style-type: none;	}
-.topic .poll .poll-vote li 				{ margin-bottom: 10px; }
-.topic .poll .poll-vote li:last-child 	{ margin-bottom: 0; }
-.topic .poll .poll-vote li label 		{ display: inline; }
-.topic .poll .poll-vote li input 		{ position: relative; top: 1px; margin-right: 2px; }
+.topic .poll .poll-vote 					{ margin-bottom: 20px; margin-left: 0; list-style-type: none;	}
+.topic .poll .poll-vote li 					{ margin-bottom: 10px; }
+.topic .poll .poll-vote li:last-child 		{ margin-bottom: 0; }
+.topic .poll .poll-vote li label 			{ display: inline; }
+.topic .poll .poll-vote li input 			{ position: relative; top: 1px; margin-right: 2px; }
 
 .topic .poll .poll-result 					{ margin-bottom: 10px; list-style-type: none; }
 .topic .poll .poll-result li 				{ margin-bottom: 20px; }
 .topic .poll .poll-result li dl 			{ overflow: hidden; zoom: 1; }
 .topic .poll .poll-result li dl dt 			{ float: left; width: 50px; margin-right: 20px; }
-.topic .poll .poll-result li dl dt span 	{ color: #999; font-size: 11px; }
+.topic .poll .poll-result li dl dt span 	{ color: #999999; font-size: 12px; }
 .topic .poll .poll-result li dl dd 			{ float: left; width: 400px; }
-.topic .poll .poll-result li dl dd div 		{ height: 7px; margin-top: 5px; background: #ccc; overflow: hidden; }
-.topic .poll .poll-result li.most dl dd div { background: #393; }
 
-.topic .poll .poll-total 				{ color: #999; font-size: 11px; margin-left: 10px; }
-.topic .poll .button.button-icon.active { background: #393; }
+.topic .poll .poll-result li dl dd div 		{ height: 6px; margin-top: 5px; background-color: #eeeeee; overflow: hidden; }
+.topic .poll .poll-result li.most dl dd div { background-color: #3fb618; }
+
+.topic .poll .poll-total 					{ color: #999999; font-size: 12px; margin-left: 10px; }
+.topic .poll .button.button-icon 			{ line-height: 14px; padding: 5px 7px; }
+.topic .poll .button.button-icon.active 	{ background: #3fb618; }
 
 
 /* Topic Photo */
-.topic.topic-type-photoset 											{  }
-.topic.topic-type-photoset .topic-photo-preview 					{ position: relative; margin-bottom: 15px; cursor: pointer; }
+.topic.topic-type-photoset .topic-photo-preview 					{ position: relative; margin-bottom: 20px; cursor: pointer; }
 .topic.topic-type-photoset .topic-photo-preview img 				{ vertical-align: top; }
-.topic.topic-type-photoset .topic-photo-preview .topic-photo-count 	{ display: none; cursor: pointer; position: absolute; top: 5px; right: 5px; background: #000; color: #6bd24b; padding: 4px 7px; background: rgba(0,0,0,.6); }
-.topic.topic-type-photoset .topic-photo-preview .topic-photo-desc 	{ display: none; width: 96%; padding: 7px 2%; position: absolute; bottom: 0; left: 0; background: #000; color: #6bd24b; color: #fff; line-height: 16px; background: rgba(0,0,0,.7); }
 
-.topic.topic-type-photoset .topic-photo-images 								{ padding-top: 10px; margin-bottom: 15px; }
-.topic.topic-type-photoset .topic-photo-images h2 							{ font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 4px; margin-bottom: 15px; }
+.topic.topic-type-photoset .topic-photo-preview .topic-photo-count 	{ display: none; cursor: pointer; position: absolute; top: 5px; right: 5px; font-size: 12px; color: #3fb618; padding: 4px 7px; background: rgba(0,0,0,.6); }
+.topic.topic-type-photoset .topic-photo-preview .topic-photo-desc 	{ display: none; width: 96%; padding: 7px 2%; position: absolute; bottom: 0; left: 0; color: #ffffff; font-size: 12px; line-height: 16px; background: rgba(0,0,0,.7); }
+
+.topic.topic-type-photoset .topic-photo-images 								{ padding-top: 10px; margin-bottom: 10px; }
+.topic.topic-type-photoset .topic-photo-images h2 							{ border-bottom: 1px solid #eee; }
 .topic.topic-type-photoset .topic-photo-images ul 							{ overflow: hidden; zoom: 1; }
-.topic.topic-type-photoset .topic-photo-images ul li 						{ float: left; margin: 0 9px 9px 0; position: relative; }
-.topic.topic-type-photoset .topic-photo-images ul li .image-number 			{ display: none; position: absolute; top: 5px; right: 5px; background: #000; color: #6bd24b; padding: 1px 6px; font-size: 11px; background: rgba(0,0,0,.6); }
-.topic.topic-type-photoset .topic-photo-images ul li:hover .image-number 	{ display: block; }
+.topic.topic-type-photoset .topic-photo-images ul li 						{ float: left; margin: 0 10px 10px 0; position: relative; }
 .topic.topic-type-photoset .topic-photo-images ul li img 					{ vertical-align: top; }
+
+
+
 .topic.topic-type-photoset .topic-photo-images .topic-photo-more 			{ display: block; text-align: center; padding: 10px 0; margin-bottom: 15px; text-decoration: none; background: #f5f5f5; color: #999; }
 .topic.topic-type-photoset .topic-photo-images .topic-photo-more:hover 		{ background: #f0f0f0; }
 
