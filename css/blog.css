@@ -6,36 +6,26 @@
 
 
 /* Header */
-.blog .blog-header 			{ position: relative; padding: 0 100px 0 63px; margin-bottom: 15px; min-height: 48px; }
-.blog .blog-header h2 		{ font-size: 22px; line-height: 1em; margin-bottom: 7px; }
+.blog .blog-header 			{ position: relative; padding: 0 100px 0 68px; margin-bottom: 20px; min-height: 48px; }
+.blog .blog-header h2 		{ margin-bottom: 3px; }
 .blog .blog-header h2 i 	{ position: relative; top: 5px; }
 .blog .blog-header .avatar 	{ position: absolute; top: 0; left: 0; }
 
-.blog .blog-header .vote-label	{ text-align: center; font-size: 11px; color: #aaa; }
-.blog .blog-header .count 		{  }
+.blog .blog-header .vote 		{ position: absolute; top: 0; right: 0; }
+.blog .blog-header .vote-label	{ text-align: center; font-size: 11px; color: #aaaaaa; }
 
-.blog .blog-header .vote 									{ position: absolute; top: 0; right: 0; }
-.blog .blog-header .vote .vote-count 						{  }
-.blog .blog-header .vote .vote-up 							{  }
-.blog .blog-header .vote .vote-down 						{  }
-.blog .blog-header .vote:hover .vote-up,
-.blog .blog-header .vote:hover .vote-down,
-.blog .blog-header .vote.voted .vote-up,
-.blog .blog-header .vote.voted .vote-down 					{  }
-.blog .blog-header .vote.vote-count-positive .vote-count 	{  }
-
-.blog .blog-header .actions { margin-bottom: 0; font-size: 11px; }
+.blog .blog-header .actions 	{ margin-bottom: 0; font-size: 11px; }
 
 
 /* Content */
-.blog .blog-more-content 	{ margin-bottom: 10px; }
-.blog .blog-content 		{ padding: 15px 0; border-bottom: 1px solid #eee; }
+.blog .blog-more-content 	{ margin-bottom: 20px; }
+.blog .blog-content 		{ padding: 20px 0; border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; }
 
 
 /* Footer */
-.blog .blog-footer 	{ padding: 15px 0; border-bottom: 1px solid #eee; }
+.blog .blog-footer 	{ padding: 20px 0; border-bottom: 1px solid #eeeeee; }
 
 
 /* More Button */
-.blog-more 			{ display: block; padding: 12px 0; text-align: center; text-decoration: none; color: #aaa; background: #fafafa; }
-.blog-more:hover 	{ background: #eee; }
+.blog-more 			{ display: block; padding: 12px 0; text-align: center; text-decoration: none; color: #999999; background: #eeeeee; }
+.blog-more:hover 	{ background: #e6e6e6; }
