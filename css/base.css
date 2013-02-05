@@ -19,12 +19,12 @@ a.delete 			{ color: #ff0039; }
 
 /* Заголовки
 ---------------------------------------------------- */
-.page-header span 	{ color: #aaa; }
+.page-header span 	{ color: #999999; }
 
 
 /* Шапка сайта
 ---------------------------------------------------- */
-.header { color: #ffffff; background: #00baf0; }
+.header { color: #ffffff; background-color: #00baf0; }
 
 .header .site-name 		{ font-size: 40px; line-height: 1em; margin: 10px 0; }
 .header .site-name a 	{ text-decoration: none; color: #ffffff; }
@@ -41,70 +41,47 @@ a.delete 			{ color: #ff0039; }
 .footer .copyright 	{ float: right; font-size: 11px; text-align: right; }
 
 
-
 /* Stat
 ---------------------------------------------------- */
-.stat-performance 			{ width: 940px; margin: 0 auto; padding: 15px 0; border-top: 1px solid #eee; }
-.stat-performance table 	{ }
+.stat-performance 			{ width: 940px; margin: 0 auto; padding: 20px 0; border-top: 1px solid #eeeeee; }
 .stat-performance table td 	{ width: 200px; vertical-align: top; }
-.stat-performance h4 		{ font-weight: bold; }
-
-
-/* Userfeed
----------------------------------------------------- */
-.userfeed-get-more 			{ display:block; width:90%; margin:0px auto; text-align:center; height:2.5em; padding-top:1em; }
-.userfeed-get-more:hover 	{ background: #f0f0f0;}
-.userfeed_loading 			{background: #F7F7F7 url(../images/loader.gif) no-repeat center;}
 
 
 /* Stream
 ---------------------------------------------------- */
-.stream-get-more 		{ display: block; text-align: center; padding: 12px 0; margin-top: 50px; background: #fafafa; color: #aaa; text-decoration: none; }
-.stream-get-more:hover 	{ background: #f0f0f0; }
-.stream_loading 		{ background: #f7f7f7 url(../images/loader.gif) no-repeat center; }
-.stream-comment-preview { padding: 5px 10px; background: #f7f7f7; margin-top: 10px; font-size: 11px; }
+.stream-get-more 		{ display: block; text-align: center; padding: 12px 0; margin-top: 40px; background: #eeeeee; color: #999999; text-decoration: none; }
+.stream-get-more:hover 	{ background-color: #e6e6e6; }
+.stream_loading 		{ background-color: #f5f5f5 url(../images/loader.gif) no-repeat center; }
 
-.stream-list 						{ margin: 0 0 20px; }
-.stream-list li.stream-item 		{ margin-bottom: 20px; min-height: 48px; _height: 48px; border-bottom: 1px solid #eee; padding: 0 0 20px 60px; position: relative; }
+.stream-comment-preview { padding: 5px 10px; margin-top: 10px; font-size: 12px; background-color: #f5f5f5; }
+
+.stream-list 						{ margin-bottom: 20px; }
+.stream-list li.stream-item 		{ margin-bottom: 20px; min-height: 48px; _height: 48px; border-bottom: 1px solid #eeeeee; padding: 0 0 20px 63px; position: relative; }
 .stream-list li.stream-item .avatar { position: absolute; top: 0; left: 0; }
-.stream-list li.stream-item .date 	{ display: block; color: #999; font-size: 11px; line-height: 1em; margin-bottom: 5px; }
-.stream-list li.stream-item a 		{  }
-.stream-list li.stream-item a:hover {  }
-.stream-list li.stream-header-date 	{ font-size: 16px; color: #999; margin: 50px 0 20px 0; padding-bottom: 5px; border-bottom: 1px solid #eee; }
+.stream-list li.stream-item .date 	{ display: block; color: #999999; font-size: 12px; }
+.stream-list li.stream-header-date 	{ font-size: 16px; color: #999999; margin: 40px 0 20px 0; padding-bottom: 5px; border-bottom: 1px solid #eeeeee; }
 
 
 /* Userfields
 ---------------------------------------------------- */
-.userfield-list 	{ width: 450px; }
-.userfield-list li 	{ background: #eee; margin-bottom: 1px; padding: 10px 10px; overflow: hidden; zoom: 1; color: #777; }
+.userfield-list li 							{ margin-bottom: 2px; padding: 10px; overflow: hidden; zoom: 1; color: #999999; background-color: #eeeeee; }
 .userfield-list li .userfield-actions 		{ float: right; }
-.userfield-list li .userfield_admin_name 	{ font-weight: bold; color: #333; }
-
-.userfield-add 			{ text-decoration: none; border-bottom: 1px dashed #70AAE0; }
-.userfield-add:hover 	{ color: #333; border-color: #333; }
+.userfield-list li .userfield_admin_name 	{ font-weight: bold; color: #333333; }
 
 
 /* Misc
 ---------------------------------------------------- */
-.avatar-edit 		{ margin-bottom: 15px; }
-.avatar-edit img 	{ vertical-align: bottom; }
-.avatar-edit label 	{ margin-top: 10px; }
+.nav-pills > .drafts 			{ float: right !important; }
 
-.drafts { float: right; float: right !important; }
+.poll-create 					{ padding: 15px 20px; margin-bottom: 20px; background-color: #eeeeee; }
 
-.poll-create 					{ padding: 15px 20px; margin-bottom: 20px; background: #f0f0f0; }
-
-.question-list 					{ margin-bottom: 15px; }
+.question-list 					{ margin-bottom: 10px; }
 .question-list li 				{ margin-bottom: 5px; }
 .question-list li .input-text	{ margin-right: 10px; }
 
-
-.help 						{ display: none; position: relative; padding: 10px 7px 13px; background: #fff; color: #333; margin-top: 13px; font-size: 11px; line-height: 16px; border: 1px solid #ddd; }
-.help:before 				{ display: block; content: ""; position: absolute; top: -12px; left: 15px; width: 0; height: 0; border-width: 6px; border-color: transparent transparent #fff transparent; border-style: solid; }
-.help h3 					{ font-size: 15px; font-weight: bold; margin-bottom: 10px; }
-.help .help-col 			{ float: left; width: 250px; padding: 0 10px; }
-.help .help-col.help-wide 	{ float: none; width: 96%; }
+.help 						{ display: none; position: relative; padding: 20px 0; background-color: #ffffff; color: #999999; margin-top: 13px; font-size: 12px; line-height: 18px; border: 1px solid #dddddd; }
+.help:before 				{ display: block; content: ""; position: absolute; top: -12px; left: 15px; width: 0; height: 0; border-width: 6px; border-color: transparent transparent #ffffff transparent; border-style: solid; }
+.help .help-col 			{ float: left; width: 44%; padding: 0 3%}
+.help .help-col.help-wide 	{ float: none; width: 94%; }
 .help .help-item 			{ margin-bottom: 20px; }
 .help .help-item:last-child { margin-bottom: 0; }
-.help .help-item h4 		{ margin-bottom: 3px; }
-.help .help-item h4 a 		{  }
