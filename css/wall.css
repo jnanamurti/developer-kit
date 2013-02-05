@@ -8,12 +8,11 @@
 .wall-submit.wall-submit-reply button 			{ display: none; }
 .wall-submit.wall-submit-reply.active textarea 	{ height: 80px; margin-bottom: 5px; }
 .wall-submit.wall-submit-reply.active button 	{ display: block; }
-.wall-submit textarea { margin: 0 0 10px; }
-.wall-submit .counter { bottom: 18px; color: #999; position: absolute; right: 15px; }
+.wall-submit textarea 							{ margin: 0 0 10px; }
+.wall-submit .counter 							{ bottom: 18px; color: #999; position: absolute; right: 15px; }
 
-.wall-submit.wall-submit-reply .counter { display: none; }
-.wall-submit.wall-submit-reply.active .counter { display: block; }
-
+.wall-submit.wall-submit-reply .counter 		{ display: none; }
+.wall-submit.wall-submit-reply.active .counter 	{ display: block; }
 
 .comments.wall,
 .wall .comment 					{ margin-bottom: 2px; }

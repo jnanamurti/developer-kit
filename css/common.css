@@ -5,7 +5,7 @@
 /* Голосование 
 ---------------------------------------------------- */
 .vote .vote-count 							{ display: inline-block; color: #aaa; font-size: 11px; }
-.vote .vote-count a 							{ text-decoration: none; color: #999; outline: none; }
+.vote .vote-count a 						{ text-decoration: none; color: #999; outline: none; }
 
 .vote.vote-count-positive .vote-count 		{ color: #393; }
 .vote.vote-count-negative .vote-count 		{ color: #c00; }
@@ -23,7 +23,6 @@
 .vote.voted.voted-down 	.vote-up:hover 		{ opacity: .3; filter: alpha(opacity=30); }
 
 
-
 /* Избранное 
 ---------------------------------------------------- */
 .favourite 			{ display: inline-block; width: 14px; height: 14px; vertical-align: text-top; background: url(../images/icons.png) -144px 0 no-repeat; opacity: .3; filter: alpha(opacity=30); cursor: pointer; }
@@ -34,7 +33,7 @@
 
 /* Actions 
 ---------------------------------------------------- */
-.actions 					{ overflow: hidden; zoom: 1; margin-bottom: 10px; }
+.actions 						{ overflow: hidden; zoom: 1; margin-bottom: 10px; }
 .actions li 					{ float: left; margin-right: 10px; }
 .actions li a 					{  }
 .actions li a:hover 			{  }
@@ -42,18 +41,13 @@
 .actions li a.link-dotted:hover {  }
 
 
-/* Пагинация 
----------------------------------------------------- */
-
-
 /* Toolbar 
 ---------------------------------------------------- */
-.toolbar 				{ float: right; position: fixed; top: 220px; right: 10px; z-index: 100; }
+.toolbar 					{ float: right; position: fixed; top: 220px; right: 10px; z-index: 100; }
 .toolbar section 			{ width: 30px; line-height: 14px; background: #fff; border: 1px solid #eee; margin-bottom: 10px; }
 .toolbar section a			{ display: block; padding: 8px; }
 .toolbar section a:hover	{ background: #f7f7f7; }
 .toolbar section i			{ display: block; }
-
 
 /* Admin button */
 .toolbar .toolbar-admin a { display: block; }
@@ -61,8 +55,8 @@
 /* Update comments button */
 .toolbar .toolbar-update {  }
 .toolbar .toolbar-update .update-comments 			{ padding: 7px; }
-.toolbar .toolbar-update .update-comments i 			{ display: block; width: 16px; height: 16px; background: url(../images/update.gif) no-repeat; opacity: .3; }
-.toolbar .toolbar-update .update-comments i:hover 		{ opacity: .5; }
+.toolbar .toolbar-update .update-comments i 		{ display: block; width: 16px; height: 16px; background: url(../images/update.gif) no-repeat; opacity: .3; }
+.toolbar .toolbar-update .update-comments i:hover 	{ opacity: .5; }
 .toolbar .toolbar-update .update-comments.active i 	{ background-position: -16px 0; opacity: .5; }
 .toolbar .toolbar-update .new-comments 				{ border-top: 1px solid #eee; padding: 10px 0; color: #333; text-align: center; font-size: 11px; text-decoration: none; }
 
@@ -73,7 +67,6 @@
 .toolbar .toolbar-scrollup { display: none; }
 
 
-
 /* Список пользователей 
 ---------------------------------------------------- */
 .user-list-avatar 			{ overflow: hidden; zoom: 1; }
@@ -81,16 +74,15 @@
 .user-list-avatar li img	{ margin-bottom: 2px; display: block; }
 
 
-
 /* Поиск 
 ---------------------------------------------------- */
 .search 						{ width: 200px; position: relative; }
 .search .input-text 			{ width: 200px; padding-right: 25px; }
-.search .input-submit 		{ border: none; width: 16px; height: 16px; position: absolute; top: 7px; right: 5px; filter: alpha(opacity=30); }
+.search .input-submit 			 border: none; width: 16px; height: 16px; position: absolute; top: 7px; right: 5px; filter: alpha(opacity=30); }
 .search .input-submit:hover 	{ filter: alpha(opacity=50); }
 
-.search-item 			{ margin-bottom: 20px; padding: 15px; background: #f7f7f7; }
-.search-item .input-text { width: 100%; padding-right: 5px; }
+.search-item 					{ margin-bottom: 20px; padding: 15px; background: #f7f7f7; }
+.search-item .input-text 		{ width: 100%; padding-right: 5px; }
 
 .search-abc 					{ overflow: hidden; zoom: 1; margin-top: 10px; }
 .search-abc li 					{ float: left; margin-right: 10px; }
@@ -99,11 +91,10 @@
 .search-tags 					{ margin-bottom: 20px; }
 
 
-
 /* Облако тегов 
 ---------------------------------------------------- */
-.tag-cloud 				{ width: 100%; text-align: center; }
-.tag-cloud li 			{ display: inline; margin-right: 5px; line-height: 22px; }
+.tag-cloud 					{ width: 100%; text-align: center; }
+.tag-cloud li 				{ display: inline; margin-right: 5px; line-height: 22px; }
 .tag-cloud li a 			{  }
 .tag-cloud li .tag-size-1 	{ font-size: 12px; }
 .tag-cloud li .tag-size-2 	{ font-size: 12px; }
@@ -114,22 +105,20 @@
 .tag-cloud li .tag-size-7 	{ font-size: 20px; }
 .tag-cloud li .tag-size-8 	{ font-size: 20px; }
 .tag-cloud li .tag-size-9 	{ font-size: 22px; }
-.tag-cloud li .tag-size-10 { font-size: 22px; }
-
+.tag-cloud li .tag-size-10 	{ font-size: 22px; }
 
 
 /* Item List 
 ---------------------------------------------------- */
-.item-list 				{ border-top: 1px solid #eee; }
-.item-list li 			{ min-height: 36px; padding: 10px 0 10px 46px; border-bottom: 1px solid #eee; position: relative; zoom: 1; }
+.item-list 					{ border-top: 1px solid #eee; }
+.item-list li 				{ min-height: 36px; padding: 10px 0 10px 46px; border-bottom: 1px solid #eee; position: relative; zoom: 1; }
 .item-list li p 			{ font-size: 11px; color: #999; }
-.item-list li span 		{font-size: 11px; color: #999; }
+.item-list li span 			{font-size: 11px; color: #999; }
 .item-list li i 			{ margin-right: 2px; }
 .item-list li a 			{  }
 .item-list li .avatar 		{ position: absolute; top: 10px; left: 0; margin-right: 10px; width: 36px; height: 36px; }
 .item-list li .author 		{ color: #333; margin-right: 5px; }
 .item-list li .blog-name 	{ color: #393 }
-
 
 
 /* Хелперы
@@ -178,14 +167,12 @@
 .ls-user:before 	{ content: ''; display: inline-block; width: 14px; height: 14px; margin-right: 3px; background: url(../images/icons.png) -168px 0 no-repeat; vertical-align: middle; opacity: .5; }
 .user.inactive 		{ color: #aaa; }
 
+.wrapper-content 						{ background: #f7f7f7; padding: 20px; }
+.wrapper-content.wrapper-content-dark 	{ background: #f0f0f0; }
 
-.wrapper-content { background: #f7f7f7; padding: 20px; }
-.wrapper-content.wrapper-content-dark { background: #f0f0f0; }
-
-#black_list li { margin-bottom: 5px; }
-#speaker_list li { margin-bottom: 5px; }
-
+#black_list li 		{ margin-bottom: 5px; }
+#speaker_list li 	{ margin-bottom: 5px; }
 
 #block-more.blogs-search,
-#block-more.people-search { position: absolute; right: 0; top: 5px; }
-#block-more.tags-search { position: absolute; right: 0; top: 2px; }
+#block-more.people-search 	{ position: absolute; right: 0; top: 5px; }
+#block-more.tags-search 	{ position: absolute; right: 0; top: 2px; }
