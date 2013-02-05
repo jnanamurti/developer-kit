@@ -2,23 +2,18 @@
 	СТРАНИЦА ПОЛЬЗОВАТЕЛЯ
 -------------------------------------------- */
 
-.profile 				{ min-height: 48px; margin-bottom: 10px; padding: 0 0 20px 65px; position: relative; }
+.profile 				{ min-height: 48px; margin-bottom: 20px; padding: 0 0 0 65px; position: relative; }
 
 .profile .avatar 		{ position: absolute; top: 0; left: 0; }
 
-.profile .vote-label	{ text-align: center; font-size: 11px; color: #aaa; }
-.profile .count 		{  }
+.profile .vote-label	{ color: #aaaaaa; font-size: 11px; text-align: center; }
+.profile .count 		{ color: #007fff; font-size: 11px; text-align: center; }
 
-.profile .vote 									{ float: right; margin-left: 20px; }
-.profile .vote .vote-count 						{  }
+.profile .vote 			{ float: right; margin-left: 20px; }
+.profile .strength 		{ float: right; }
 
-.profile .vote.vote-count-positive .vote-count 	{  }
-
-.profile .strength 					{ float: right; }
-
-.profile .user-login 				{ width: 270px; margin-bottom: 0; }
-.profile .user-login.no-user-name 	{ position: relative; top: 9px; }
+.profile .user-login 				{ width: 350px; margin-bottom: 0; }
+.profile .user-login.no-user-name 	{ position: relative; top: 10px; }
 .profile .user-name 				{ color: #777; }
 
-.profile-info-about { padding: 13px 20px 20px; background: #ffc; margin-bottom: 30px; }
-.profile-info-about h3 { font-size: 18px; margin-bottom: 5px; }
+.profile-info-about 	{ padding: 15px 20px 20px; background: #ffc; margin-bottom: 40px; }
