@@ -18,6 +18,7 @@ $config['head']['default']['css'] = array(
 	"___path.static.skin___/css/framework/buttons.css",
 	"___path.static.skin___/css/framework/navs.css",
 	"___path.static.skin___/css/framework/tables.css",
+	"___path.static.skin___/css/framework/icons.css",
 	"___path.static.skin___/css/framework/modals.css",
 
 	/* Structure */
