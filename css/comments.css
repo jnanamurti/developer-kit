@@ -4,28 +4,26 @@
 
 /* Блок с комментариями */
 .comments-header 					{ margin-bottom: 20px; position: relative; }
-.comments-header h3 				{ font-size: 24px; margin-bottom: 5px; }
-.comments-header .subscribe 		{ color: #777; font-size: 11px; position: absolute; right: 0; top: 15px; }
+.comments-header .subscribe 		{ color: #999999; font-size: 12px; position: absolute; right: 0; top: 5px; }
 .comments-header .subscribe input 	{ top: 3px; }
-.comments 							{ margin-bottom: 30px; }
+
+.comments 							{ margin-bottom: 40px; }
 
 .comment-wrapper 					{ position: relative; }
 .comment-wrapper .comment-wrapper 	{ padding-left: 20px; }
 
-.comment-preview { padding: 5px 10px 6px; margin-bottom: 10px; background: #fafafa; border: 1px solid #eee; }
-.comment-preview { font-size: 13px; line-height: 18px; }
+.comment-preview 					{ padding: 15px; margin-bottom: 10px; background: #f5f5f5; }
 
 
 /* Стили для списка комментариев на странице http://ваш_сайт/comments/ */
-.comments.comment-list .comment 				{ margin-bottom: 30px; }
-.comments.comment-list .comment-path 			{ font-size: 11px; padding: 5px 10px 6px 0; }
-.comments.comment-list .comment-path .blog-name { color: #777; }
+.comments.comment-list .comment-path 			{ font-size: 12px; padding: 0 15px; }
+.comments.comment-list .comment-path .blog-name { color: #999999; }
 
 
 /* Комментарий */
-.comment 					{ min-height: 48px; margin-bottom: 15px; padding: 10px 10px 10px 56px; position: relative; }
-.comment .deleted 			{ padding: 5px 10px; color: #777; background: #f4f4f4; }
-.comment .comment-avatar 	{ position: absolute; top: 10px; left: 10px; height: 36px; width: 36px; }
+.comment 					{ min-height: 36px; margin-bottom: 20px; padding: 15px 15px 15px 61px; position: relative; }
+.comment .deleted 			{ padding: 15px; color: #999999; background: #f5f5f5; }
+.comment .comment-avatar 	{ position: absolute; top: 15px; left: 15px; height: 36px; width: 36px; }
 
 
 /* Типы комментариев
