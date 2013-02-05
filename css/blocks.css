@@ -25,30 +25,27 @@
 
 
 /* Block Type - Profile */
-.block.block-type-profile 							{ border: none; padding: 0; }
-.block.block-type-profile .profile-photo-wrapper 	{ position: relative; min-height: 50px; }
+.block.block-type-profile .profile-photo-wrapper 	{ position: relative; margin: 0 auto; min-height: 50px; max-width: 250px; }
 .block.block-type-profile .profile-photo 			{ vertical-align: top; }
 .block.block-type-profile .status 					{ position: absolute; top: 5px; left: 5px; padding: 0 5px; font-size: 11px; }
-.block.block-type-profile .status.status-online 	{ background: #393; color: #fff; }
-.block.block-type-profile .status.status-offline 	{ background: #333; color: #fff; opacity: .5; filter: alpha(opacity=50); }
-.block.block-type-profile .upload-photo 			{ padding: 7px 10px 10px; background: #f7f7f7; }
+.block.block-type-profile .status.status-online 	{ background-color: #3fb618; color: #ffffff; }
+.block.block-type-profile .status.status-offline 	{ background-color: #333333; color: #ffffff; opacity: .5; filter: alpha(opacity=50); }
+.block.block-type-profile .upload-photo 			{ padding: 7px 10px 10px; margin: 0 auto; max-width: 230px; background-color: #eeeeee; }
 
-.block.block-type-profile-note	 			{ background: #ffc; border: 1px solid #fc6; }
-.block.block-type-profile-note p 			{ margin-bottom: 10px; }
-.block.block-type-profile-note .actions 	{ margin-bottom: 0; }
+.block.block-type-profile-note	 					{ background: #ffffcc; border: 1px solid #ffcc66; }
+.block.block-type-profile-note p 					{ margin-bottom: 10px; }
+.block.block-type-profile-note .actions 			{ margin-bottom: 0; }
 
-.block.block-type-profile-nav 				{ border: none; padding: 0; }
+.block.block-type-profile-nav 						{ border: none; padding: 0; }
 
-.block.block-type-profile-actions .block-content 		{  }
-.block.block-type-profile-actions ul li					{ margin-bottom: 5px; }
-.block.block-type-profile-actions ul li:last-child		{ margin-bottom: 0; }
-.block.block-type-profile-actions ul li a.followed		{ color: #c00; }
+.block.block-type-profile-actions ul li				{ margin-bottom: 5px; }
+.block.block-type-profile-actions ul li:last-child	{ margin-bottom: 0; }
+.block.block-type-profile-actions ul li a.followed	{ color: #ff0039; }
 
 
 /* Block Type - Foldable */
-.block.block-type-foldable 					{ background: #f9f9f9; }
-.block.block-type-foldable .block-header 	{ margin: 0; }
-.block.block-type-foldable .block-content 	{ display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; }
+.block.block-type-foldable 					{ background-color: #f9f9f9; }
+.block.block-type-foldable .block-content 	{ display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid #eeeeee; }
 
 
-.block.block-type-blog .block-content { color: #999; font-size: 11px; }
+.block.block-type-blog .block-content { color: #999; font-size: 12px; }

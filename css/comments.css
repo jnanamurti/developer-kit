@@ -10,7 +10,7 @@
 .comments 							{ margin-bottom: 30px; }
 
 .comment-wrapper 					{ position: relative; }
-.comment-wrapper .comment-wrapper 	{ padding-left: 25px; }
+.comment-wrapper .comment-wrapper 	{ padding-left: 20px; }
 
 .comment-preview { padding: 5px 10px 6px; margin-bottom: 10px; background: #fafafa; border: 1px solid #eee; }
 .comment-preview { font-size: 13px; line-height: 18px; }
@@ -53,6 +53,7 @@
 .comment .comment-info li a { text-decoration: none; }
 .comment .comment-info li.comment-author a { font-weight: bold; }
 .comment .comment-info li.comment-author .comment-topic-author { color: #c00; }
+.comment .comment-info li.comment-date 			{ color: #999; }
 .comment .comment-info li.comment-date a 		{ color: #999; border-color: #999; }
 .comment .comment-info li.vote 					{ position: absolute; top: 0; right: 0; margin: 0; }
 .comment .comment-info li.goto-comment-child 	{ display: none; }

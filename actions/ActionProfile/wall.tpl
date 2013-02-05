@@ -29,7 +29,7 @@
 	</form>
 {else}
 	<div class="wall-note" id="wall-note-list-empty">
-		<h3>{$aLang.wall_add_quest}</h3>
+		<h6>{$aLang.wall_add_quest}</h6>
 	</div>
 {/if}
 
