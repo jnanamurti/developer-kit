@@ -33,12 +33,8 @@
 
 /* Actions 
 ---------------------------------------------------- */
-.actions 						{ overflow: hidden; zoom: 1; margin-bottom: 10px; }
-.actions li 					{ float: left; margin-right: 10px; }
-.actions li a 					{  }
-.actions li a:hover 			{  }
-.actions li a.link-dotted 		{  }
-.actions li a.link-dotted:hover {  }
+.actions 			{ overflow: hidden; zoom: 1; margin-bottom: 10px; }
+.actions li 		{ float: left; margin-right: 10px; }
 
 
 /* Toolbar 
@@ -50,10 +46,9 @@
 .toolbar section i			{ display: block; }
 
 /* Admin button */
-.toolbar .toolbar-admin a { display: block; }
+.toolbar .toolbar-admin a 	{ display: block; }
 
 /* Update comments button */
-.toolbar .toolbar-update {  }
 .toolbar .toolbar-update .update-comments 			{ padding: 7px; }
 .toolbar .toolbar-update .update-comments i 		{ display: block; width: 16px; height: 16px; background: url(../images/update.gif) no-repeat; opacity: .3; }
 .toolbar .toolbar-update .update-comments i:hover 	{ opacity: .5; }
@@ -76,26 +71,25 @@
 
 /* Поиск 
 ---------------------------------------------------- */
-.search 						{ width: 200px; position: relative; }
-.search .input-text 			{ width: 200px; padding-right: 25px; }
-.search .input-submit 			{ border: none; width: 16px; height: 16px; position: absolute; top: 7px; right: 5px; filter: alpha(opacity=30); }
-.search .input-submit:hover 	{ filter: alpha(opacity=50); }
+.search 					{ width: 200px; position: relative; }
+.search .input-text 		{ width: 200px; padding-right: 25px; }
+.search .input-submit 		{ border: none; width: 16px; height: 16px; position: absolute; top: 7px; right: 5px; filter: alpha(opacity=30); }
+.search .input-submit:hover { filter: alpha(opacity=50); }
 
-.search-item 					{ margin-bottom: 20px; padding: 15px; background: #f7f7f7; }
-.search-item .input-text 		{ width: 100%; padding-right: 5px; }
+.search-item 				{ margin-bottom: 20px; padding: 15px; background: #f7f7f7; }
+.search-item .input-text 	{ width: 100%; padding-right: 5px; }
 
-.search-abc 					{ overflow: hidden; zoom: 1; margin-top: 10px; }
-.search-abc li 					{ float: left; margin-right: 10px; }
-.search-abc li.active a 		{ color: #333; border: none; }
+.search-abc 				{ overflow: hidden; zoom: 1; margin-top: 10px; }
+.search-abc li 				{ float: left; margin-right: 10px; }
+.search-abc li.active a 	{ color: #333; border: none; }
 
-.search-tags 					{ margin-bottom: 20px; }
+.search-tags 				{ margin-bottom: 20px; }
 
 
 /* Облако тегов 
 ---------------------------------------------------- */
 .tag-cloud 					{ width: 100%; text-align: center; }
 .tag-cloud li 				{ display: inline; margin-right: 5px; line-height: 22px; }
-.tag-cloud li a 			{  }
 .tag-cloud li .tag-size-1 	{ font-size: 12px; }
 .tag-cloud li .tag-size-2 	{ font-size: 12px; }
 .tag-cloud li .tag-size-3 	{ font-size: 14px; }
@@ -115,7 +109,6 @@
 .item-list li p 			{ font-size: 11px; color: #999; }
 .item-list li span 			{font-size: 11px; color: #999; }
 .item-list li i 			{ margin-right: 2px; }
-.item-list li a 			{  }
 .item-list li .avatar 		{ position: absolute; top: 10px; left: 0; margin-right: 10px; width: 36px; height: 36px; }
 .item-list li .author 		{ color: #333; margin-right: 5px; }
 .item-list li .blog-name 	{ color: #393 }
