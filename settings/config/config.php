@@ -10,15 +10,7 @@ $config['head']['default']['js'][] = '___path.static.skin___/js/template.js';
 
 $config['head']['default']['css'] = array(
 	/* Framework */
-	"___path.static.skin___/css/framework/reset.css",
-	"___path.static.skin___/css/framework/base.css",
-	"___path.static.skin___/css/framework/grid.css",
-	"___path.static.skin___/css/framework/common.css",
-	"___path.static.skin___/css/framework/buttons.css",
-	"___path.static.skin___/css/framework/navs.css",
-	"___path.static.skin___/css/framework/icons.css",
-	"___path.static.skin___/css/framework/tables.css",
-	"___path.static.skin___/css/framework/modals.css",
+	"___path.static.skin___/bootstrap/css/bootstrap.css",
 
 	/* Structure */
 	"___path.static.skin___/css/base.css",
