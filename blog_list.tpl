@@ -28,8 +28,7 @@
 			</tr>
 		</thead>
 	{/if}
-	
-	
+
 	<tbody>
 		{if $aBlogs}
 			{foreach from=$aBlogs item=oBlog}

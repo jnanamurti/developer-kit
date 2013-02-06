@@ -5,6 +5,7 @@
 		{if $aBlock.type=='block'}
 			{insert name="block" block=$aBlock.name params=$aBlock.params}
 		{/if}
+		
 		{if $aBlock.type=='template'}
 			{include file=$aBlock.name params=$aBlock.params}
 		{/if}
