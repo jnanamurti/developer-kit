@@ -1,6 +1,5 @@
 <header class="header" role="banner">
 	<div class="container">
-		
 		{hook run='header_banner_begin'}
 		
 		<hgroup class="site-info">
@@ -9,6 +8,5 @@
 		</hgroup>
 	
 		{hook run='header_banner_end'}
-		
 	</div>
 </header>

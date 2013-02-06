@@ -88,7 +88,6 @@
 {add_block group='toolbar' name='toolbar_scrollup.tpl' priority=-100}
 
 
-
 <body class="{$body_classes}">
 	{hook run='body_begin'}
 		

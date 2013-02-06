@@ -5,7 +5,6 @@
 				{include file='sidebar.tpl'}
 			{/if}
 		</div> <!-- /wrapper -->
-	
 	</div> <!-- /container -->
 
 
@@ -19,7 +18,6 @@
 			</div>
 		
 			{hook run='footer_end'}
-		
 		</div>
 	</footer>
 
