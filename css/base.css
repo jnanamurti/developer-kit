@@ -42,7 +42,7 @@ a.delete 			{ color: #ff0039; }
 
 /* Stat
 ---------------------------------------------------- */
-.stat-performance 			{ width: 940px; margin: 0 auto; padding: 20px 0; border-top: 1px solid #eeeeee; }
+.stat-performance 			{ padding: 20px 0; }
 .stat-performance table td 	{ width: 200px; vertical-align: top; }
 
 
@@ -78,7 +78,7 @@ a.delete 			{ color: #ff0039; }
 .question-list li 				{ margin-bottom: 5px; }
 .question-list li .input-text	{ margin-right: 10px; }
 
-.help 						{ display: none; position: relative; padding: 0 0 20px; background-color: #ffffff; color: #999999; margin-top: 13px; font-size: 12px; line-height: 18px; border: 1px solid #dddddd; }
+.help 						{ display: none; position: relative; padding: 0 0 20px; margin: 13px 0 0; color: #999999; font-size: 12px; line-height: 18px; border: 1px solid #dddddd; background-color: #ffffff; }
 .help:before 				{ display: block; content: ""; position: absolute; top: -12px; left: 15px; width: 0; height: 0; border-width: 6px; border-color: transparent transparent #ffffff transparent; border-style: solid; }
 .help .help-col 			{ float: left; width: 44%; padding: 0 3%; margin: 0; font-weight: normal;}
 .help .help-col.help-wide 	{ float: none; width: 94%; }

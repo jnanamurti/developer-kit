@@ -1,5 +1,5 @@
 {if $bIsShowStatsPerformance and $oUserCurrent and $oUserCurrent->isAdministrator()}
-	<div class="stat-performance">
+	<div class="container stat-performance">
 		{hook run='statistics_performance_begin'}
 		<table>
 			<tr>
