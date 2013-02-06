@@ -7,5 +7,4 @@
 		<input type="hidden" id="comment_last_id" value="{$params.iMaxIdComment}" />
 		<input type="hidden" id="comment_use_paging" value="{if $aPagingCmt and $aPagingCmt.iCountPage>1}1{/if}" />
 	</section>
-{/if}
-	
+{/if}	
