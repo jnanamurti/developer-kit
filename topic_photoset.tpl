@@ -1,6 +1,5 @@
 {include file='topic_part_header.tpl'}
 
-
 <script type="text/javascript">
 	jQuery(window).load(function($) {
 		ls.photoset.showMainPhoto({$oTopic->getId()});
@@ -9,17 +8,16 @@
 
 {assign var=oMainPhoto value=$oTopic->getPhotosetMainPhoto()}
 {if $oMainPhoto}
-<div class="topic-photo-preview" id="photoset-main-preview-{$oTopic->getId()}" onclick="window.location='{$oTopic->getUrl()}#photoset'">
-	<div class="topic-photo-count" id="photoset-photo-count-{$oTopic->getId()}">{$oTopic->getPhotosetCount()} {$aLang.topic_photoset_photos}</div>
+	<div class="topic-photo-preview" id="photoset-main-preview-{$oTopic->getId()}" onclick="window.location='{$oTopic->getUrl()}#photoset'">
+		<div class="topic-photo-count" id="photoset-photo-count-{$oTopic->getId()}">{$oTopic->getPhotosetCount()} {$aLang.topic_photoset_photos}</div>
 	
-	{if $oMainPhoto->getDescription()}
-		<div class="topic-photo-desc" id="photoset-photo-desc-{$oTopic->getId()}">{$oMainPhoto->getDescription()}</div>
-	{/if}
+		{if $oMainPhoto->getDescription()}
+			<div class="topic-photo-desc" id="photoset-photo-desc-{$oTopic->getId()}">{$oMainPhoto->getDescription()}</div>
+		{/if}
 	
-	<img src="{$oMainPhoto->getWebPath(500)}" alt="image" id="photoset-main-image-{$oTopic->getId()}" />
-</div>
+		<img src="{$oMainPhoto->getWebPath(500)}" alt="image" id="photoset-main-image-{$oTopic->getId()}" />
+	</div>
 {/if}
-
 
 {assign var=iPhotosCount value=$oTopic->getPhotosetCount()}
 <div class="topic-content text">
@@ -44,7 +42,6 @@
 	{hook run='topic_content_end' topic=$oTopic bTopicList=$bTopicList}
 </div> 
 
-
 {if !$bTopicList}
 	<script type="text/javascript" src="{cfg name='path.root.engine_lib'}/external/prettyPhoto/js/prettyPhoto.js"></script>	
 	<link rel='stylesheet' type='text/css' href="{cfg name='path.root.engine_lib'}/external/prettyPhoto/css/prettyPhoto.css" />
@@ -58,13 +55,12 @@
 			});
 		});
 	</script>
-	
-	
+
 	<div class="topic-photo-images">
 		<h2>{$oTopic->getPhotosetCount()} {$oTopic->getPhotosetCount()|declension:$aLang.topic_photoset_count_images}</h2>
 		<a name="photoset"></a>
 		
-		<ul id="topic-photo-images">
+		<ul id="topic-photo-images" class="unstyled inline">
 			{assign var=aPhotos value=$oTopic->getPhotosetPhotos(0, $oConfig->get('module.topic.photoset.per_page'))}
 			{if count($aPhotos)}                                
 				{foreach from=$aPhotos item=oPhoto}
@@ -82,6 +78,5 @@
 		{/if}
 	</div>
 {/if}
-
  
 {include file='topic_part_footer.tpl'}

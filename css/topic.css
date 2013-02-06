@@ -69,9 +69,7 @@
 
 .topic.topic-type-photoset .topic-photo-images 							{ padding-top: 10px; margin-bottom: 10px; }
 .topic.topic-type-photoset .topic-photo-images h2 						{ border-bottom: 1px solid #eee; }
-.topic.topic-type-photoset .topic-photo-images ul 						{ overflow: hidden; zoom: 1; }
-.topic.topic-type-photoset .topic-photo-images ul li 					{ float: left; margin: 0 10px 10px 0; position: relative; }
-.topic.topic-type-photoset .topic-photo-images ul li img 				{ vertical-align: top; }
+.topic.topic-type-photoset .topic-photo-images ul li 					{ margin-bottom: 10px; }
 
 .topic.topic-type-photoset .topic-photo-images .topic-photo-more 		{ display: block; text-align: center; padding: 12px 0; margin-bottom: 10px; text-decoration: none; background-color: #eeeeee; color: #999999; }
 .topic.topic-type-photoset .topic-photo-images .topic-photo-more:hover 	{ background-color: #e6e6e6; }
