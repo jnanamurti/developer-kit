@@ -150,9 +150,6 @@
 
 /* Разное
 ---------------------------------------------------- */
-.system-message-error 	{ background-color: #ff0039; color: #ffffff; padding: 10px 15px; margin-bottom: 20px; }
-.system-message-notice 	{ background-color: #3fb618; color: #ffffff; padding: 10px 15px; margin-bottom: 20px; }
-
 .notice-empty 			{ color: #999999; }
 
 .loader { background: #f5f5f5 url(../images/loader.gif) 50% 50% no-repeat; }

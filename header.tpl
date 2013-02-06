@@ -89,7 +89,7 @@
 
 
 
-<body class="{$body_classes} width-{cfg name='view.grid.type'}">
+<body class="{$body_classes}">
 	{hook run='body_begin'}
 		
 	{if $oUserCurrent}
@@ -105,13 +105,13 @@
 	
 	<div class="container {hook run='container_class'}">
 
-		<div class="wrapper row {hook run='wrapper_class'}">
+		<div class="row wrapper {hook run='wrapper_class'}">
 			{if !$noSidebar && $sidebarPosition == 'left'}
 				{include file='sidebar.tpl'}
 			{/if}
 		
 			<div role="main" 
-				class="content span8 
+				class="span8 content 
 					   {if $noSidebar}content-full-width{/if} 
 					   {if $sidebarPosition == 'left'}content-right{/if}"
 				{if $sMenuItemSelect=='profile'}itemscope itemtype="http://data-vocabulary.org/Person"{/if}>
