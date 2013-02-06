@@ -48,25 +48,18 @@
 /* Poll */
 .topic .poll { margin-bottom: 20px; }
 
-.topic .poll .poll-vote 					{ margin-bottom: 20px; margin-left: 0; list-style-type: none;	}
+.topic .poll .poll-vote 					{ margin-bottom: 20px; }
 .topic .poll .poll-vote li 					{ margin-bottom: 10px; }
 .topic .poll .poll-vote li:last-child 		{ margin-bottom: 0; }
-.topic .poll .poll-vote li label 			{ display: inline; }
-.topic .poll .poll-vote li input 			{ position: relative; top: 1px; margin-right: 2px; }
-
-.topic .poll .poll-result 					{ margin-bottom: 10px; list-style-type: none; }
-.topic .poll .poll-result li 				{ margin-bottom: 20px; }
 .topic .poll .poll-result li dl 			{ overflow: hidden; zoom: 1; }
-.topic .poll .poll-result li dl dt 			{ float: left; width: 50px; margin-right: 20px; }
-.topic .poll .poll-result li dl dt span 	{ color: #999999; font-size: 12px; }
+.topic .poll .poll-result li dl dt 			{ float: left; width: 50px; }
+.topic .poll .poll-result li dl dt span 	{ color: #999999; font-size: 12px; font-weight: normal; }
 .topic .poll .poll-result li dl dd 			{ float: left; width: 400px; }
 
-.topic .poll .poll-result li dl dd div 		{ height: 6px; margin-top: 5px; background-color: #eeeeee; overflow: hidden; }
+.topic .poll .poll-result li dl dd div 		{ height: 6px; margin-top: 8px; background-color: #eeeeee; overflow: hidden; }
 .topic .poll .poll-result li.most dl dd div { background-color: #3fb618; }
 
 .topic .poll .poll-total 					{ color: #999999; font-size: 12px; margin-left: 10px; }
-.topic .poll .button.button-icon 			{ line-height: 14px; padding: 5px 7px; }
-.topic .poll .button.button-icon.active 	{ background: #3fb618; }
 
 
 /* Topic Photo */

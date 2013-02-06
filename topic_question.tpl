@@ -1,11 +1,10 @@
 {include file='topic_part_header.tpl'}
 
-
 <div id="topic_question_area_{$oTopic->getId()}" class="poll">
 	{if !$oTopic->getUserQuestionIsVote()}
-		<ul class="poll-vote">
+		<ul class="unstyled poll-vote">
 			{foreach from=$oTopic->getQuestionAnswers() key=key item=aAnswer}
-				<li><label><input type="radio" id="topic_answer_{$oTopic->getId()}_{$key}" name="topic_answer_{$oTopic->getId()}" value="{$key}" onchange="jQuery('#topic_answer_{$oTopic->getId()}_value').val(jQuery(this).val());" /> {$aAnswer.text|escape:'html'}</label></li>
+				<li><label class="radio"><input type="radio" id="topic_answer_{$oTopic->getId()}_{$key}" name="topic_answer_{$oTopic->getId()}" value="{$key}" onchange="jQuery('#topic_answer_{$oTopic->getId()}_value').val(jQuery(this).val());" />{$aAnswer.text|escape:'html'}</label></li>
 			{/foreach}
 		</ul>
 
@@ -18,7 +17,6 @@
 	{/if}
 </div>
 
-
 <div class="topic-content text">
 	{hook run='topic_content_begin' topic=$oTopic bTopicList=$bTopicList}
 	
@@ -26,6 +24,5 @@
 	
 	{hook run='topic_content_end' topic=$oTopic bTopicList=$bTopicList}
 </div> 
-
 
 {include file='topic_part_footer.tpl'}
