@@ -1,6 +1,6 @@
 {assign var="oUser" value=$oTopic->getUser()}
 
-<h3 class="profile-page-header">{$aLang.topic_preview}</h3>
+<h3 class="page-header">{$aLang.topic_preview}</h3>
 
 <article class="topic topic-type-{$oTopic->getType()}">
 	<header class="topic-header">
@@ -10,7 +10,7 @@
 
 		<div class="topic-info">
 			<time datetime="{date_format date=$oTopic->getDateAdd() format='c'}" pubdate title="{date_format date=$oTopic->getDateAdd() format='j F Y, H:i'}">
-			{date_format date=$oTopic->getDateAdd() format="j F Y, H:i"}
+				{date_format date=$oTopic->getDateAdd() format="j F Y, H:i"}
 			</time>
 		</div>
 	</header>
@@ -24,8 +24,8 @@
 	</div>
 
 	<footer class="topic-footer">
-		<ul class="topic-tags">
-			<li>{$aLang.block_tags}:</li>
+		<ul class="unstyled inline topic-tags">
+			<li><i class="icon-tags"></i></li>
 			{strip}
 				{if $oTopic->getTagsArray()}
 					{foreach from=$oTopic->getTagsArray() item=sTag name=tags_list}
@@ -37,7 +37,7 @@
 			{/strip}
 		</ul>
 
-		<ul class="topic-info">
+		<ul class="unstyled inline topic-info">
 			<li class="topic-info-author"><a rel="author" href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a></li>
 			{hook run='topic_preview_show_info' topic=$oTopic}
 		</ul>
