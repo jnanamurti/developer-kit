@@ -13,10 +13,9 @@
 
 
 /* Добавление топика */
-.modal.modal-write 									{ width: 780px; margin-left: -390px; top: 50px; }
-.modal.modal-write .write-list 						{ *overflow: hidden; *zoom: 1; }
-.modal.modal-write .write-list li 					{ width: 100px; margin: 0 10px; text-align: center; overflow: hidden; display: inline-table; *float: left; }
-.modal.modal-write .write-list li .write-item-image { display: block; width: 100px; height: 100px; text-align: center; background: url(../images/write.png) no-repeat; margin-bottom: 10px; }
+.modal.modal-write 									{ width: 690px; margin-left: -345px; top: 50px; }
+.modal.modal-write .write-list li 					{ text-align: center; }
+.modal.modal-write .write-list li .write-item-image { display: block; width: 100px; height: 100px; background: url(../images/write.png) no-repeat; margin-bottom: 10px; }
 
 .modal.modal-write .write-list li.write-item-type-topic .write-item-image 		{ background-position: 0 0; }
 .modal.modal-write .write-list li.write-item-type-poll .write-item-image 		{ background-position: -100px 0; }

@@ -1,12 +1,12 @@
 <div class="modal modal-write" id="modal_write">
 	<header class="modal-header">
+		<button type="button" class="close jqmClose" data-dismiss="modal" aria-hidden="true">&times;</button>
 		<h3>{$aLang.block_create}</h3>
-		<a href="#" class="close jqmClose"></a>
 	</header>
 	
 	{strip}
-	<div class="modal-content">
-		<ul class="write-list">
+	<div class="modal-body">
+		<ul class="unstyled inline write-list">
 			<li class="write-item-type-topic">
 				<a href="{router page='topic'}add" class="write-item-image"></a>
 				<a href="{router page='topic'}add" class="write-item-link">{$aLang.block_create_topic_topic}</a>

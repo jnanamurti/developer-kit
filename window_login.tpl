@@ -1,7 +1,7 @@
 {if !$oUserCurrent}
 	<div class="modal modal-login" id="window_login_form">
 		<header class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<button type="button" class="close jqmClose" data-dismiss="modal" aria-hidden="true">&times;</button>
 			<h3>{$aLang.user_authorization}</h3>
 		</header>
 		
@@ -32,14 +32,14 @@
 				<form action="{router page='login'}" method="post" id="popup-login-form">
 					{hook run='form_login_popup_begin'}
 
-					<p><label for="popup-login">{$aLang.user_login}:</label>
-					<input type="text" name="login" id="popup-login" class="input-text input-width-full"></p>
+					<label for="popup-login">{$aLang.user_login}:</label>
+					<input type="text" name="login" id="popup-login" class="span4">
 					
-					<p><label for="popup-password">{$aLang.user_password}:</label>
-					<input type="password" name="password" id="popup-password" class="input-text input-width-full">
-					<small class="validate-error-hide validate-error-login"></small></p>
+					<label for="popup-password">{$aLang.user_password}:</label>
+					<input type="password" name="password" id="popup-password" class="span4">
+					<small class="validate-error-hide validate-error-login"></small>
 					
-					<p><label><input type="checkbox" name="remember" class="input-checkbox" checked> {$aLang.user_login_remember}</label></p>
+					<p><label class="checkbox"><input type="checkbox" name="remember" class="input-checkbox" checked>{$aLang.user_login_remember}</label></p>
 
 					{hook run='form_login_popup_end'}
 
@@ -79,35 +79,35 @@
 				<form action="{router page='registration'}" method="post" id="popup-registration-form">
 					{hook run='form_registration_begin' isPopup=true}
 
-					<p><label for="popup-registration-login">{$aLang.registration_login}
+					<label for="popup-registration-login">{$aLang.registration_login}
 					<i class="icon-question-sign js-tip-help" title="{$aLang.registration_login_notice}"></i>
 					<i class="icon-ok-green validate-ok-field-login" style="display: none"></i></label>
-					<input type="text" name="login" id="popup-registration-login" value="{$_aRequest.login}" class="input-text input-width-full js-ajax-validate" />
-					<small class="validate-error-hide validate-error-field-login"></small></p>
+					<input type="text" name="login" id="popup-registration-login" value="{$_aRequest.login}" class="span4 js-ajax-validate" />
+					<small class="validate-error-hide validate-error-field-login"></small>
 
-					<p><label for="popup-registration-mail">{$aLang.registration_mail}
+					<label for="popup-registration-mail">{$aLang.registration_mail}
 					<i class="icon-question-sign js-tip-help" title="{$aLang.registration_mail_notice}"></i>
 					<i class="icon-ok-green validate-ok-field-mail" style="display: none"></i></label>
-					<input type="text" name="mail" id="popup-registration-mail" value="{$_aRequest.mail}" class="input-text input-width-full js-ajax-validate" />
-					<small class="validate-error-hide validate-error-field-mail"></small></p>
+					<input type="text" name="mail" id="popup-registration-mail" value="{$_aRequest.mail}" class="span4 js-ajax-validate" />
+					<small class="validate-error-hide validate-error-field-mail"></small>
 
-					<p><label for="popup-registration-user-password">{$aLang.registration_password}
+					<label for="popup-registration-user-password">{$aLang.registration_password}
 					<i class="icon-question-sign js-tip-help" title="{$aLang.registration_password_notice}"></i>
 					<i class="icon-ok-green validate-ok-field-password" style="display: none"></i></label>
-					<input type="password" name="password" id="popup-registration-user-password" value="" class="input-text input-width-full js-ajax-validate" />
-					<small class="validate-error-hide validate-error-field-password"></small></p>
+					<input type="password" name="password" id="popup-registration-user-password" value="" class="span4 js-ajax-validate" />
+					<small class="validate-error-hide validate-error-field-password"></small>
 
-					<p><label for="popup-registration-user-password-confirm">{$aLang.registration_password_retry}
+					<label for="popup-registration-user-password-confirm">{$aLang.registration_password_retry}
 					<i class="icon-ok-green validate-ok-field-password_confirm" style="display: none"></i></label>
-					<input type="password" value="" id="popup-registration-user-password-confirm" name="password_confirm" class="input-text input-width-full js-ajax-validate" />
-					<small class="validate-error-hide validate-error-field-password_confirm"></small></p>
+					<input type="password" value="" id="popup-registration-user-password-confirm" name="password_confirm" class="span4 js-ajax-validate" />
+					<small class="validate-error-hide validate-error-field-password_confirm"></small>
 
 					{hookb run="popup_registration_captcha"}
 					<p><label for="popup-registration-captcha">{$aLang.registration_captcha}</label>
 					<img src="{cfg name='path.root.engine_lib'}/external/kcaptcha/index.php?{$_sPhpSessionName}={$_sPhpSessionId}" 
 						 onclick="this.src='{cfg name='path.root.engine_lib'}/external/kcaptcha/index.php?{$_sPhpSessionName}={$_sPhpSessionId}&n='+Math.random();"
 						 class="captcha-image" />
-					<input type="text" name="captcha" id="popup-registration-captcha" value="" maxlength="3" class="input-text input-width-100 js-ajax-validate" />
+					<input type="text" name="captcha" id="popup-registration-captcha" value="" maxlength="3" class="span2 js-ajax-validate" />
 					<small class="validate-error-hide validate-error-field-captcha"></small></p>
 					{/hookb}
 
@@ -133,7 +133,7 @@
 				</script>
 				<form action="{router page='login'}reminder/" method="POST" id="popup-reminder-form">
 					<p><label for="popup-reminder-mail">{$aLang.password_reminder_email}</label>
-					<input type="text" name="mail" id="popup-reminder-mail" class="input-text input-width-full" />
+					<input type="text" name="mail" id="popup-reminder-mail" class="span4" />
 					<small class="validate-error-hide validate-error-reminder"></small></p>
 
 					<button type="submit" name="submit_reminder" class="btn btn-primary" id="popup-reminder-form-submit" disabled="disabled">{$aLang.password_reminder_submit}</button>
