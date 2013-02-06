@@ -9,8 +9,8 @@
 			{/foreach}
 		</ul>
 
-		<button type="submit" onclick="ls.poll.vote({$oTopic->getId()},jQuery('#topic_answer_{$oTopic->getId()}_value').val());" class="button button-primary">{$aLang.topic_question_vote}</button>
-		<button type="submit" onclick="ls.poll.vote({$oTopic->getId()},-1)" class="button">{$aLang.topic_question_abstain}</button>
+		<button type="submit" onclick="ls.poll.vote({$oTopic->getId()},jQuery('#topic_answer_{$oTopic->getId()}_value').val());" class="btn btn-primary">{$aLang.topic_question_vote}</button>
+		<button type="submit" onclick="ls.poll.vote({$oTopic->getId()},-1)" class="btn">{$aLang.topic_question_abstain}</button>
 		
 		<input type="hidden" id="topic_answer_{$oTopic->getId()}_value" value="-1" />
 	{else}
@@ -26,7 +26,6 @@
 	
 	{hook run='topic_content_end' topic=$oTopic bTopicList=$bTopicList}
 </div> 
-
 
 
 {include file='topic_part_footer.tpl'}
