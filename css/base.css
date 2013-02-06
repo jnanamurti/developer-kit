@@ -78,9 +78,9 @@ a.delete 			{ color: #ff0039; }
 .question-list li 				{ margin-bottom: 5px; }
 .question-list li .input-text	{ margin-right: 10px; }
 
-.help 						{ display: none; position: relative; padding: 20px 0; background-color: #ffffff; color: #999999; margin-top: 13px; font-size: 12px; line-height: 18px; border: 1px solid #dddddd; }
+.help 						{ display: none; position: relative; padding: 0 0 20px; background-color: #ffffff; color: #999999; margin-top: 13px; font-size: 12px; line-height: 18px; border: 1px solid #dddddd; }
 .help:before 				{ display: block; content: ""; position: absolute; top: -12px; left: 15px; width: 0; height: 0; border-width: 6px; border-color: transparent transparent #ffffff transparent; border-style: solid; }
-.help .help-col 			{ float: left; width: 44%; padding: 0 3%}
+.help .help-col 			{ float: left; width: 44%; padding: 0 3%; margin: 0; font-weight: normal;}
 .help .help-col.help-wide 	{ float: none; width: 94%; }
 .help .help-item 			{ margin-bottom: 20px; }
 .help .help-item:last-child { margin-bottom: 0; }

@@ -132,11 +132,6 @@
 .fl-r { float: right !important; }
 .fl-l { float: left !important; }
 
-.clearfix:before,
-.clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix 		{ zoom: 1; }
-
 
 /* Разное
 ---------------------------------------------------- */
