@@ -5,7 +5,7 @@
 
 
 	<footer class="topic-footer">
-		<ul class="unstyled topic-tags js-favourite-insert-after-form js-favourite-tags-topic-{$oTopic->getId()}">
+		<ul class="unstyled inline topic-tags js-favourite-insert-after-form js-favourite-tags-topic-{$oTopic->getId()}">
 			<li><i class="icon-tags"></i></li>
 			
 			{strip}
@@ -39,7 +39,7 @@
 		</div>
 
 
-		<ul class="unstyled topic-info">
+		<ul class="unstyled inline topic-info">
 			<li class="topic-info-author"><a rel="author" href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a></li>
 			<li class="topic-info-favourite">
 				<div onclick="return ls.favourite.toggle({$oTopic->getId()},this,'topic');" class="favourite {if $oUserCurrent && $oTopic->getIsFavourite()}active{/if}"></div>
@@ -54,7 +54,7 @@
 				</li>
 			{/if}
 			
-			<li id="vote_area_topic_{$oTopic->getId()}" class="vote 
+			<li id="vote_area_topic_{$oTopic->getId()}" class="pull-right vote 
 																{if $oVote || ($oUserCurrent && $oTopic->getUserId() == $oUserCurrent->getId()) || strtotime($oTopic->getDateAdd()) < $smarty.now-$oConfig->GetValue('acl.vote.topic.limit_time')}
 																	{if $oTopic->getRating() > 0}
 																		vote-count-positive
@@ -99,7 +99,7 @@
 			{hook run='topic_show_info' topic=$oTopic}
 		</ul>
 
-		
+
 		{if !$bTopicList}
 			{hook run='topic_show_end' topic=$oTopic}
 		{/if}

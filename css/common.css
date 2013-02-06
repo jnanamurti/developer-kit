@@ -137,15 +137,6 @@
 .clearfix:after { clear: both; }
 .clearfix 		{ zoom: 1; }
 
-.word-wrap {
-	white-space: -moz-pre-wrap !important;
-	white-space: -pre-wrap;
-	white-space: -o-pre-wrap; 
-	white-space: pre-wrap;
-	word-wrap: break-word; 
-	white-space: normal;
-}
-
 
 /* Разное
 ---------------------------------------------------- */

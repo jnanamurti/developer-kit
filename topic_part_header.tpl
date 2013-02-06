@@ -2,10 +2,9 @@
 {assign var="oUser" value=$oTopic->getUser()}
 {assign var="oVote" value=$oTopic->getVote()}
 
-
 <article class="topic topic-type-{$oTopic->getType()} js-topic">
 	<header class="topic-header">
-		<h1 class="topic-title word-wrap">
+		<h1 class="topic-title">
 			{if $bTopicList}
 				<a href="{$oTopic->getUrl()}">{$oTopic->getTitle()|escape:'html'}</a>
 			{else}
@@ -20,8 +19,7 @@
 				<i class="icon-globe" title="{$aLang.topic_link}"></i>
 			{/if}
 		</h1>
-		
-		
+
 		<div class="topic-info">
 			<a href="{$oBlog->getUrlFull()}" class="topic-blog">{$oBlog->getTitle()|escape:'html'}</a>
 			
@@ -29,7 +27,7 @@
 				{date_format date=$oTopic->getDateAdd() format="j F Y, H:i"}
 			</time>
 			
-			<ul class="actions">								   
+			<ul class="unstyled inline actions">								   
 				{if $oUserCurrent and ($oUserCurrent->getId()==$oTopic->getUserId() or $oUserCurrent->isAdministrator() or $oBlog->getUserIsAdministrator() or $oBlog->getUserIsModerator() or $oBlog->getOwnerId()==$oUserCurrent->getId())}
 					<li><a href="{cfg name='path.root.web'}/{$oTopic->getType()}/edit/{$oTopic->getId()}/" title="{$aLang.topic_edit}" class="text-success">{$aLang.topic_edit}</a></li>
 				{/if}
