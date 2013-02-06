@@ -5,20 +5,19 @@ $config = array();
 $config['view']['theme'] = 'default';
 
 
-
 $config['head']['default']['js'] = Config::Get('head.default.js');
 $config['head']['default']['js'][] = '___path.static.skin___/js/template.js';
 
 $config['head']['default']['css'] = array(
 	/* Framework */
 	"___path.static.skin___/css/framework/reset.css",
-	"___path.static.skin___/css/framework/grid.css",
 	"___path.static.skin___/css/framework/base.css",
+	"___path.static.skin___/css/framework/grid.css",
 	"___path.static.skin___/css/framework/common.css",
 	"___path.static.skin___/css/framework/buttons.css",
 	"___path.static.skin___/css/framework/navs.css",
-	"___path.static.skin___/css/framework/tables.css",
 	"___path.static.skin___/css/framework/icons.css",
+	"___path.static.skin___/css/framework/tables.css",
 	"___path.static.skin___/css/framework/modals.css",
 
 	/* Structure */
@@ -29,11 +28,11 @@ $config['head']['default']['css'] = array(
 	"___path.root.engine_lib___/external/prettify/prettify.css",
 	"___path.static.skin___/css/grid.css",
 	"___path.static.skin___/css/common.css",
-	"___path.static.skin___/css/forms.css",
 	"___path.static.skin___/css/text.css",
+	"___path.static.skin___/css/forms.css",
 	"___path.static.skin___/css/navs.css",
-	"___path.static.skin___/css/tables.css",
 	"___path.static.skin___/css/icons.css",
+	"___path.static.skin___/css/tables.css",
 	"___path.static.skin___/css/topic.css",
 	"___path.static.skin___/css/comments.css",
 	"___path.static.skin___/css/blocks.css",

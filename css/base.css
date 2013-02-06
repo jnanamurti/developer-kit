@@ -24,7 +24,7 @@ a.delete 			{ color: #ff0039; }
 
 /* Шапка сайта
 ---------------------------------------------------- */
-.header { color: #ffffff; background-color: #00baf0; }
+.header 				{ color: #ffffff; background-color: #00baf0; }
 
 .header .site-name 		{ font-size: 40px; line-height: 1em; margin: 10px 0; }
 .header .site-name a 	{ text-decoration: none; color: #ffffff; }

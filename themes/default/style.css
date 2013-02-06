@@ -3,11 +3,11 @@
 .navbar .nav > li > a.new-messages:hover 	{ color: #3fb618; }
 
 /* Table Blogs */
-.table.table-blogs { margin-bottom: 50px; }
+.table.table-blogs { margin-bottom: 40px; }
 
 
 /* Table Users */
-.table.table-users { margin-bottom: 50px; }
+.table.table-users { margin-bottom: 40px; }
 
 /* Table Profile Info */
 .table.table-profile-info 				{ margin-bottom: 40px; }
