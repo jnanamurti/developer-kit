@@ -3,7 +3,7 @@
 <h2 class="page-header">{$aLang.stream_menu}</h2>
 
 {if count($aStreamEvents)}
-	<ul class="stream-list" id="stream-list">
+	<ul class="unstyled stream-list" id="stream-list">
 		{include file='actions/ActionStream/events.tpl'}
 	</ul>
 
@@ -14,6 +14,5 @@
 {else}
     {$aLang.stream_no_events}
 {/if}
-
 
 {include file='footer.tpl'}

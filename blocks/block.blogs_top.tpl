@@ -1,4 +1,4 @@
-<ul class="item-list">
+<ul class="unstyled item-list">
 	{foreach from=$aBlogs item=oBlog}
 		<li>
 			<a href="{$oBlog->getUrlFull()}"><img src="{$oBlog->getAvatarPath(48)}" alt="avatar" class="avatar" /></a>

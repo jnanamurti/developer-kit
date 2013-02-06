@@ -1,4 +1,4 @@
-<ul class="item-list">
+<ul class="unstyled item-list">
 	{foreach from=$aComments item=oComment name="cmt"}
 		{assign var="oUser" value=$oComment->getUser()}
 		{assign var="oTopic" value=$oComment->getTarget()}

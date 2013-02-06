@@ -5,7 +5,7 @@
 
 
 	<footer class="topic-footer">
-		<ul class="topic-tags js-favourite-insert-after-form js-favourite-tags-topic-{$oTopic->getId()}">
+		<ul class="unstyled topic-tags js-favourite-insert-after-form js-favourite-tags-topic-{$oTopic->getId()}">
 			<li><i class="icon-tags"></i></li>
 			
 			{strip}
@@ -39,7 +39,7 @@
 		</div>
 
 
-		<ul class="topic-info">
+		<ul class="unstyled topic-info">
 			<li class="topic-info-author"><a rel="author" href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a></li>
 			<li class="topic-info-favourite">
 				<div onclick="return ls.favourite.toggle({$oTopic->getId()},this,'topic');" class="favourite {if $oUserCurrent && $oTopic->getIsFavourite()}active{/if}"></div>

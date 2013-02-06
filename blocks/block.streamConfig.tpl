@@ -20,7 +20,7 @@
 		<div class="block-content">
 			<small class="note">{$aLang.stream_settings_note_filter}</small>
 			
-			<ul class="activity-settings-filter">
+			<ul class="unstyled activity-settings-filter">
 				{foreach from=$aStreamEventTypes key=sType item=aEventType}
 					{if !($oConfig->get('module.stream.disable_vote_events') && substr($sType, 0, 4) == 'vote')}
 						<li>
