@@ -1,5 +1,5 @@
 {if $aUsersList}
-	<ul class="user-list-avatar">
+	<ul class="unstyled inline user-list-avatar">
 		{foreach from=$aUsersList item=oUserList}
 			{assign var="oSession" value=$oUserList->getSession()}
 			
