@@ -55,5 +55,4 @@
 	</tbody>
 </table>
 
-
 {include file='paging.tpl' aPaging=$aPaging}

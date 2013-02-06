@@ -1,10 +1,9 @@
 {if !$oUserCurrent}
 	<div class="modal modal-login" id="window_login_form">
 		<header class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			<h3>{$aLang.user_authorization}</h3>
-			<a href="#" class="close jqmClose"></a>
 		</header>
-		
 		
 		<script type="text/javascript">
 			jQuery(function($){
@@ -16,8 +15,8 @@
 			});
 		</script>
 		
-		<div class="modal-content">
-			<ul class="nav nav-pills nav-pills-tabs">
+		<div class="modal-body">
+			<ul class="nav nav-pills">
 				<li class="active js-block-popup-login-item" data-type="login"><a href="#">{$aLang.user_login_submit}</a></li>
 				{if !$oConfig->GetValue('general.reg.invite')}
 					<li class="js-block-popup-login-item" data-type="registration"><a href="#">{$aLang.registration}</a></li>
@@ -45,7 +44,7 @@
 					{hook run='form_login_popup_end'}
 
 					<input type="hidden" name="return-path" value="{$PATH_WEB_CURRENT|escape:'html'}">
-					<button type="submit" name="submit_login" class="button button-primary" id="popup-login-form-submit" disabled="disabled">{$aLang.user_login_submit}</button>
+					<button type="submit" name="submit_login" class="btn btn-primary" id="popup-login-form-submit" disabled="disabled">{$aLang.user_login_submit}</button>
 				</form>
 				{hook run='login_popup_end'}
 			</div>
@@ -115,7 +114,7 @@
 					{hook run='form_registration_end' isPopup=true}
 
 					<input type="hidden" name="return-path" value="{$PATH_WEB_CURRENT|escape:'html'}">
-					<button type="submit" name="submit_register" class="button button-primary" id="popup-registration-form-submit" disabled="disabled">{$aLang.registration_submit}</button>
+					<button type="submit" name="submit_register" class="btn btn-primary" id="popup-registration-form-submit" disabled="disabled">{$aLang.registration_submit}</button>
 				</form>
 				{hook run='registration_end' isPopup=true}
 			</div>
@@ -137,7 +136,7 @@
 					<input type="text" name="mail" id="popup-reminder-mail" class="input-text input-width-full" />
 					<small class="validate-error-hide validate-error-reminder"></small></p>
 
-					<button type="submit" name="submit_reminder" class="button button-primary" id="popup-reminder-form-submit" disabled="disabled">{$aLang.password_reminder_submit}</button>
+					<button type="submit" name="submit_reminder" class="btn btn-primary" id="popup-reminder-form-submit" disabled="disabled">{$aLang.password_reminder_submit}</button>
 				</form>
 			</div>
 		</div>
