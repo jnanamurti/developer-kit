@@ -1,6 +1,6 @@
 {if !$noShowSystemMessage}
 	{if $aMsgError}
-		<ul class="alert alert-error">
+		<ul class="unstyled alert alert-error">
 			{foreach from=$aMsgError item=aMsg}
 				<li>
 					{if $aMsg.title!=''}
@@ -14,7 +14,7 @@
 
 
 	{if $aMsgNotice}
-		<ul class="alert alert-success">
+		<ul class="unstyled alert alert-success">
 			{foreach from=$aMsgNotice item=aMsg}
 				<li>
 					{if $aMsg.title!=''}
