@@ -4,8 +4,7 @@
 
 /* Блок с комментариями */
 .comments-header 					{ margin-bottom: 20px; position: relative; }
-.comments-header .subscribe 		{ color: #999999; font-size: 12px; position: absolute; right: 0; top: 5px; }
-.comments-header .subscribe input 	{ top: 3px; }
+.comments-header .subscribe 		{ color: #999999; font-size: 12px; position: absolute; right: 0; top: 10px; }
 
 .comments 							{ margin-bottom: 40px; }
 
@@ -46,19 +45,16 @@
 
 
 /* Info Block */
-.comment .comment-info 							{ font-size: 12px; margin-bottom: 10px; padding: 0 70px 0 0; line-height: 14px; position: relative; overflow: hidden; zoom: 1; }
-.comment .comment-info li 						{ float: left; margin-right: 10px; }
+.comment .comment-info 							{ font-size: 12px; }
 .comment .comment-info li.comment-author a 		{ font-weight: bold; }
-.comment .comment-info li.comment-author .comment-topic-author { color: #ff0039; }
+.comment .comment-info li.comment-author .comment-topic-author { color: #468847; }
 .comment .comment-info li.comment-date 			{ color: #999999; }
 .comment .comment-info li.comment-date a 		{ color: #999999; border-color: #999999; }
-.comment .comment-info li.vote 					{ position: absolute; top: 0; right: 0; margin: 0; }
 .comment .comment-info li.goto-comment-child 	{ display: none; }
 
 
 /* Actions */
-.comment .comment-actions 		{ font-size: 12px; margin-top: 10px; }
-.comment .comment-actions li 	{ display: inline; margin-right: 10px; }
+.comment .comment-actions 		{ font-size: 12px; margin: 10px 0 0; }
 
 
 /* Форма комментирования */

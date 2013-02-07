@@ -13,8 +13,10 @@
 		
 		<div class="subscribe">
 			{if $bAllowSubscribe and $oUserCurrent}
-				<input {if $oSubscribeComment and $oSubscribeComment->getStatus()}checked="checked"{/if} type="checkbox" id="comment_subscribe" class="input-checkbox" onchange="ls.subscribe.toggle('{$sTargetType}_new_comment','{$iTargetId}','',this.checked);">
-				<label for="comment_subscribe">{$aLang.comment_subscribe}</label>
+				<label class="checkbox">
+					<input {if $oSubscribeComment and $oSubscribeComment->getStatus()}checked="checked"{/if} type="checkbox" id="comment_subscribe" class="input-checkbox" onchange="ls.subscribe.toggle('{$sTargetType}_new_comment','{$iTargetId}','',this.checked);">
+					{$aLang.comment_subscribe}
+				</label>
 			{/if}
 		</div>
 	
@@ -74,8 +76,8 @@
 				<button type="submit" name="submit_comment" 
 						id="comment-button-submit" 
 						onclick="ls.comments.add('form_comment',{$iTargetId},'{$sTargetType}'); return false;" 
-						class="button button-primary">{$aLang.comment_add}</button>
-				<button type="button" onclick="ls.comments.preview();" class="button">{$aLang.comment_preview}</button>
+						class="btn btn-primary">{$aLang.comment_add}</button>
+				<button type="button" onclick="ls.comments.preview();" class="btn">{$aLang.comment_preview}</button>
 				
 				<input type="hidden" name="reply" value="0" id="form_comment_reply" />
 				<input type="hidden" name="cmt_target_id" value="{$iTargetId}" />
@@ -84,6 +86,4 @@
 	{else}
 		{$aLang.comment_unregistered}
 	{/if}
-{/if}	
-
-
+{/if}

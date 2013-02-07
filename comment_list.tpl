@@ -17,7 +17,7 @@
 			<a href="{$oUser->getUserWebPath()}"><img src="{$oUser->getProfileAvatarPath(48)}" alt="avatar" class="comment-avatar" /></a>
 		
 		
-			<ul class="comment-info clearfix">
+			<ul class="unstyled inline comment-info">
 				<li class="comment-author"><a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a></li>
 				<li class="comment-date">
 					<a href="{if $oConfig->GetValue('module.comment.nested_per_page')}{router page='comments'}{else}{$oTopic->getUrl()}#comment{/if}{$oComment->getId()}" class="link-dotted" title="{$aLang.comment_url_notice}">
@@ -30,7 +30,7 @@
 						<span class="favourite-count" id="fav_count_comment_{$oComment->getId()}">{if $oComment->getCountFavourite() > 0}{$oComment->getCountFavourite()}{/if}</span>
 					</li>
 				{/if}
-				<li id="vote_area_comment_{$oComment->getId()}" class="vote 
+				<li id="vote_area_comment_{$oComment->getId()}" class="pull-right vote 
 																		{if $oComment->getRating() > 0}
 																			vote-count-positive
 																		{elseif $oComment->getRating() < 0}
