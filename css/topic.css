@@ -78,7 +78,7 @@
 .topic-photo-upload ul li 							{ min-height: 100px; _height: 100px; margin-bottom: 10px; padding-left: 110px; position: relative; font-size: 12px; }
 .topic-photo-upload ul li img 						{ position: absolute; top: 0; left: 0; }
 .topic-photo-upload ul li label 					{ color: #999999; }
-.topic-photo-upload ul li textarea 					{ width: 350px; height: 60px; }
+.topic-photo-upload ul li textarea 					{ height: 60px; }
 .topic-photo-upload ul li .image-delete 			{ margin-right: 10px; }
 .topic-photo-upload ul li .mark-as-preview 			{ display: none; }
 .topic-photo-upload ul li:hover .mark-as-preview 	{ display: inline; }
