@@ -54,7 +54,7 @@
 		<li {if $sMenuSubItemSelect=='link'}class="active"{/if}><a href="{router page='link'}add/">{$aLang.topic_menu_add_link}</a></li>
 		<li {if $sMenuSubItemSelect=='photoset'}class="active"{/if}><a href="{router page='photoset'}add/">{$aLang.topic_menu_add_photoset}</a></li>
 		{if $iUserCurrentCountTopicDraft}
-			<li class="drafts{if $sMenuSubItemSelect=='saved'} active{/if}">
+			<li class="pull-right{if $sMenuSubItemSelect=='saved'} active{/if}">
 				<a href="{router page='topic'}saved/">{$aLang.topic_menu_saved} ({$iUserCurrentCountTopicDraft})</a>
 			</li>
 		{/if}
