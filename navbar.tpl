@@ -6,13 +6,6 @@
 		
 			{hook run='userbar_nav'}
 			
-			{*
-				<form action="{router page='search'}topics/" class="navbar-search pull-left search">
-					<input type="text" placeholder="{$aLang.search}" maxlength="255" name="q" class="input-text">
-					<input type="submit" value="" title="{$aLang.search_submit}" class="input-submit icon icon-search">
-				</form>
-			*}
-			
 			<ul class="nav">
 				<li {if $sMenuHeadItemSelect=='blog'}class="active"{/if}><a href="{cfg name='path.root.web'}">{$aLang.topic_title}</a></li>
 				<li {if $sMenuHeadItemSelect=='blogs'}class="active"{/if}><a href="{router page='blogs'}">{$aLang.blogs}</a></li>
