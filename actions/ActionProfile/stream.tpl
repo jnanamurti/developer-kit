@@ -1,11 +1,11 @@
 {include file='header.tpl' menu='people'}
 
+
 {include file='actions/ActionProfile/profile_top.tpl'}
 
-
 {if count($aStreamEvents)}
-	<ul class="stream-list" id="stream-list">
-	{include file='actions/ActionStream/events.tpl'}
+	<ul class="unstyled stream-list" id="stream-list">
+		{include file='actions/ActionStream/events.tpl'}
 	</ul>
 
 	{if !$bDisableGetMoreButton}

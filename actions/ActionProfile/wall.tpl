@@ -23,9 +23,9 @@
 {if $oUserCurrent}
 	<form class="wall-submit">
 		<label for="wall-text">{$aLang.wall_add_title}:</label>
-		<textarea rows="4" id="wall-text" class="input-text input-width-full js-wall-reply-parent-text"></textarea>
+		<textarea rows="4" id="wall-text" class="input-block-level js-wall-reply-parent-text"></textarea>
 
-		<button type="button" onclick="ls.wall.add(jQuery('#wall-text').val(),0);" class="button button-primary js-button-wall-submit">{$aLang.wall_add_submit}</button>
+		<button type="button" onclick="ls.wall.add(jQuery('#wall-text').val(),0);" class="btn btn-primary js-button-wall-submit">{$aLang.wall_add_submit}</button>
 	</form>
 {else}
 	<div class="wall-note" id="wall-note-list-empty">
