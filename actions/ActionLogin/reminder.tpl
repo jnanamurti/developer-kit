@@ -15,12 +15,11 @@
 
 <form action="{router page='login'}reminder/" method="POST" id="reminder-form">
 	<p><label for="reminder-mail">{$aLang.password_reminder_email}</label>
-	<input type="text" name="mail" id="reminder-mail" class="input-text input-width-200" />
+	<input type="text" name="mail" id="reminder-mail" class="span4" />
 	<small class="validate-error-hide validate-error-reminder"></small></p>
 
-	<button type="submit" name="submit_reminder" class="button button-primary" id="reminder-form-submit" disabled="disabled">{$aLang.password_reminder_submit}</button>
+	<button type="submit" name="submit_reminder" class="btn btn-primary" id="reminder-form-submit" disabled="disabled">{$aLang.password_reminder_submit}</button>
 </form>
-
 
 
 {include file='footer.tpl'}

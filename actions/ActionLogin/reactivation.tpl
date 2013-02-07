@@ -15,12 +15,11 @@
 
 <form action="{router page='login'}reactivation/" method="POST" id="reactivation-form">
 	<p><label for="reactivation-mail">{$aLang.password_reminder_email}</label>
-	<input type="text" name="mail" id="reactivation-mail" class="input-text input-width-200" />
+	<input type="text" name="mail" id="reactivation-mail" class="span3" />
 	<small class="validate-error-hide validate-error-reactivation"></small></p>
 
-	<button type="submit"  name="submit_reactivation" class="button button-primary" id="reactivation-form-submit" disabled="disabled">{$aLang.reactivation_submit}</button>
+	<button type="submit" name="submit_reactivation" class="btn btn-primary" id="reactivation-form-submit" disabled="disabled">{$aLang.reactivation_submit}</button>
 </form>
-
 
 
 {include file='footer.tpl'}
