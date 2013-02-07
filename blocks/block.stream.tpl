@@ -23,10 +23,8 @@
 			</li>
 		</ul>
 		
-		
 		<div class="js-block-stream-content">
 			{$sStreamComments}
 		</div>
 	</div>
 </section>
-

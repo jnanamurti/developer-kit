@@ -15,25 +15,25 @@
 		
 		<div class="js-block-favourite-topic-tags-content" data-type="all">
 			{if $aFavouriteTopicTags}
-				<ul class="tag-cloud word-wrap">
+				<ul class="unstyled inline tag-cloud word-wrap">
 					{foreach from=$aFavouriteTopicTags item=oTag}
 						<li><a class="tag-size-{$oTag->getSize()} {if $sFavouriteTag==$oTag->getText()}tag-current{/if}" title="{$oTag->getCount()}" href="{$oFavouriteUser->getUserWebPath()}favourites/topics/tag/{$oTag->getText()|escape:'url'}/">{$oTag->getText()}</a></li>
 					{/foreach}
 				</ul>
 			{else}
-				<div class="notice-empty">{$aLang.block_tags_empty}</div>
+				<p class="muted">{$aLang.block_tags_empty}</p>
 			{/if}
 		</div>
 		
 		<div class="js-block-favourite-topic-tags-content" data-type="user" style="display: none;">
 			{if $aFavouriteTopicUserTags}
-				<ul class="tag-cloud word-wrap">
+				<ul class="unstyled inline tag-cloud word-wrap">
 					{foreach from=$aFavouriteTopicUserTags item=oTag}
 						<li><a class="tag-size-{$oTag->getSize()}" title="{$oTag->getCount()}" href="{$oFavouriteUser->getUserWebPath()}favourites/topics/tag/{$oTag->getText()|escape:'url'}/">{$oTag->getText()}</a></li>
 					{/foreach}
 				</ul>
 			{else}
-				<div class="notice-empty">{$aLang.block_tags_empty}</div>
+				<p class="muted">{$aLang.block_tags_empty}</p>
 			{/if}
 		</div>
 	</div>

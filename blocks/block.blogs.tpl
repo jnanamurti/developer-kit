@@ -4,7 +4,6 @@
 		<div class="block-update js-block-blogs-update"></div>
 	</header>
 	
-	
 	<div class="block-content">
 		<ul class="nav nav-pills js-block-blogs-nav">
 			<li class="active js-block-blogs-item" data-type="top"><a href="#">{$aLang.block_blogs_top}</a></li>
@@ -14,12 +13,10 @@
 			{/if}
 		</ul>
 		
-		
 		<div class="js-block-blogs-content">
 			{$sBlogsTop}
 		</div>
 
-		
 		<footer>
 			<a href="{router page='blogs'}">{$aLang.block_blogs_all}</a>
 		</footer>

@@ -14,11 +14,9 @@
 			</p>
 			<a href="{if $oConfig->GetValue('module.comment.nested_per_page')}{router page='comments'}{else}{$oTopic->getUrl()}#comment{/if}{$oComment->getId()}">{$oTopic->getTitle()|escape:'html'}</a>
 			<span><i class="icon-comment"></i>{$oTopic->getCountComment()}</span>
-
 		</li>
 	{/foreach}
 </ul>
-
 
 <footer>
 	<a href="{router page='comments'}">{$aLang.block_stream_comments_all}</a> | <a href="{router page='rss'}allcomments/">RSS</a>

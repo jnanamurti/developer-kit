@@ -18,12 +18,6 @@
 .block .block-update.active { background-position: -16px 0; opacity: .5; }
 
 
-/* Block Type - Activity Settings */
-.block.block-type-activity p 		{ margin-bottom: 10px; }
-.block.block-type-activity ul li 	{ margin-bottom: 5px; }
-.block.block-type-activity .note 	{ display: block; margin-bottom: 10px; color: #999999; }
-
-
 /* Block Type - Profile */
 .block.block-type-profile .profile-photo-wrapper 	{ position: relative; margin: 0 auto; min-height: 50px; max-width: 250px; }
 .block.block-type-profile .profile-photo 			{ vertical-align: top; }

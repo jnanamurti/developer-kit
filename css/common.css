@@ -91,7 +91,7 @@
 /* Облако тегов 
 ---------------------------------------------------- */
 .tag-cloud 					{ width: 100%; text-align: center; }
-.tag-cloud li 				{ display: inline; margin-right: 5px; line-height: 24px; }
+.tag-cloud li 				{ line-height: 24px; }
 .tag-cloud li .tag-size-1 	{ font-size: 12px; }
 .tag-cloud li .tag-size-2 	{ font-size: 12px; }
 .tag-cloud li .tag-size-3 	{ font-size: 14px; }
@@ -113,7 +113,6 @@
 .item-list li i 			{ margin-right: 2px; }
 .item-list li .avatar 		{ position: absolute; top: 10px; left: 0; margin-right: 10px; width: 36px; height: 36px; }
 .item-list li .author 		{ color: #333333; font-weight: bold; margin-right: 5px; }
-.item-list li .blog-name 	{ color: #393 }
 
 
 /* Хелперы

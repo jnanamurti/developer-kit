@@ -9,4 +9,4 @@
 			<p>{$aLang.blog_rating}: <strong>{$oBlog->getRating()}</strong></p>
 		</li>
 	{/foreach}
-</ul>				
+</ul>
