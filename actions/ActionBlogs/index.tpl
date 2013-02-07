@@ -1,12 +1,13 @@
 {include file='header.tpl' sMenuHeadItemSelect="blogs"}
 
+
 <h2 class="page-header">{$aLang.blogs}</h2>
 
 <a id="block-more" class="icon-search blogs-search" title="{$aLang.blogs_name_search}" href="#"></a>
 
 <div id="block-more-content" style="display: none;">
 	<form action="" method="POST" id="form-blogs-search" onsubmit="return false;" class="search-item">
-		<input type="text" placeholder="{$aLang.blogs_search_title_hint}" autocomplete="off" name="blog_title" class="input-text" value="" onkeyup="ls.timer.run(ls.blog.searchBlogs,'blogs_search',['form-blogs-search'],1000);">
+		<input type="text" placeholder="{$aLang.blogs_search_title_hint}" autocomplete="off" name="blog_title" class="input-block-level" value="" onkeyup="ls.timer.run(ls.blog.searchBlogs,'blogs_search',['form-blogs-search'],1000);">
 	</form>
 </div>
 
@@ -17,5 +18,6 @@
 	{include file='blog_list.tpl' bBlogsUseOrder=true sBlogsRootPage=$sBlogsRootPage}
 	{include file='paging.tpl' aPaging=$aPaging}
 </div>
+
 
 {include file='footer.tpl'}
