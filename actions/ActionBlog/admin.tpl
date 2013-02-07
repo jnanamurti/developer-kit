@@ -2,7 +2,6 @@
 {include file='menu.blog_edit.tpl'}
 
 
-
 {if $aBlogUsers}
 	<form method="post" enctype="multipart/form-data" class="mb-20">
 		<input type="hidden" name="security_ls_key" value="{$LIVESTREET_SECURITY_KEY}" />
@@ -41,14 +40,13 @@
 			</tbody>
 		</table>
 
-		<button type="submit" name="submit_blog_admin" class="button button-primary">{$aLang.blog_admin_users_submit}</button>
+		<button type="submit" name="submit_blog_admin" class="btn btn-primary">{$aLang.blog_admin_users_submit}</button>
 	</form>
 
 	{include file='paging.tpl' aPaging=$aPaging}
 {else}
 	{$aLang.blog_admin_users_empty}
 {/if}
-
 
 
 {include file='footer.tpl'}

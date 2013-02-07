@@ -1,6 +1,8 @@
 {include file='header.tpl' menu='blog'}
 
+
 {include file='topic.tpl'}
+
 {include 
 	file='comment_tree.tpl' 	
 	iTargetId=$oTopic->getId()

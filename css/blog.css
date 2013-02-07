@@ -14,12 +14,12 @@
 .blog .blog-header .vote 		{ position: absolute; top: 0; right: 0; }
 .blog .blog-header .vote-label	{ text-align: center; font-size: 11px; color: #aaaaaa; }
 
-.blog .blog-header .actions 	{ margin-bottom: 0; font-size: 11px; }
+.blog .blog-header .actions 	{ font-size: 12px; }
 
 
 /* Content */
 .blog .blog-more-content 	{ margin-bottom: 20px; }
-.blog .blog-content 		{ padding: 20px 0; border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; }
+.blog .blog-content 		{ padding: 20px 0 10px; border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; }
 
 
 /* Footer */
