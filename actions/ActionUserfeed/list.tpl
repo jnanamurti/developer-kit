@@ -1,7 +1,7 @@
 {include file='header.tpl' menu='blog'}
+
+
 {include file='topic_list.tpl'}
-
-
 
 {if count($aTopics)}
     {if !$bDisableGetMoreButton}
@@ -12,7 +12,6 @@
 {else}
     {$aLang.userfeed_no_events}
 {/if}
-
 
 
 {include file='footer.tpl'}
