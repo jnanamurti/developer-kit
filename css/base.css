@@ -64,7 +64,6 @@ a.delete 			{ color: #ff0039; }
 /* Userfields
 ---------------------------------------------------- */
 .userfield-list li 							{ margin-bottom: 2px; padding: 10px; overflow: hidden; zoom: 1; color: #999999; background-color: #eeeeee; }
-.userfield-list li .userfield-actions 		{ float: right; }
 .userfield-list li .userfield_admin_name 	{ font-weight: bold; color: #333333; }
 
 

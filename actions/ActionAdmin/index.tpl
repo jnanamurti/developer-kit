@@ -1,10 +1,9 @@
 {include file='header.tpl'}
 
 
-
 <h2 class="page-header">{$aLang.admin_header}</h2>
 
-<ul>
+<ul class="unstyled">
     <li><a href="{router page="admin"}plugins/">{$aLang.admin_list_plugins}</a></li>
     <li><a href="{router page="admin"}userfields/">{$aLang.admin_list_userfields}</a></li>
     <li><a href="{router page="admin"}restorecomment/?security_ls_key={$LIVESTREET_SECURITY_KEY}">{$aLang.admin_list_restorecomment}</a></li>
@@ -15,7 +14,6 @@
 </ul>
 
 {hook run='admin_action'}
-
 
 
 {include file='footer.tpl'}
