@@ -75,8 +75,7 @@
 .search-item 				{ margin-bottom: 20px; padding: 15px; background-color: #f5f5f5; }
 .search-item .input-text 	{ width: 100%; padding-right: 5px; }
 
-.search-abc 				{ overflow: hidden; zoom: 1; margin-top: 10px; }
-.search-abc li 				{ float: left; margin-right: 10px; }
+.search-abc li 				{ padding-left: 0 !important; }
 .search-abc li.active a 	{ color: #333333; border: none; }
 
 .search-tags 				{ margin-bottom: 20px; }
