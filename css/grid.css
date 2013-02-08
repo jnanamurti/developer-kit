@@ -4,6 +4,8 @@
 
 .header 					{ position: relative; padding: 40px 0; }
 
+.nav.navbar 				{ margin-bottom: 40px; }
+
 .content 					{ position: relative; }
 .content.content-full-width { width: 100%; }
 

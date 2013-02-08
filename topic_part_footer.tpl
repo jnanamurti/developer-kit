@@ -86,7 +86,7 @@
 				<div class="vote-up" onclick="return ls.vote.vote({$oTopic->getId()},this,1,'topic');"></div>
 				{if $bVoteInfoShow}
 					<div id="vote-info-topic-{$oTopic->getId()}" style="display: none;">
-						<ul class="vote-topic-info">
+						<ul class="unstyled vote-topic-info">
 							<li><i class="icon-thumbs-up icon-white"></i>{$oTopic->getCountVoteUp()}</li>
 							<li><i class="icon-thumbs-down icon-white"></i>{$oTopic->getCountVoteDown()}</li>
 							<li><i class="icon-eye-open icon-white"></i>{$oTopic->getCountVoteAbstain()}</li>

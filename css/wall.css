@@ -3,7 +3,6 @@
 -------------------------------------------- */
 
 .wall-submit 									{ margin-bottom: 20px; padding: 15px; position: relative; background-color: #f5f5f5; }
-.wall-submit textarea 							{ margin-bottom: 10px; }
 .wall-submit .counter 							{ bottom: 18px; color: #999999; position: absolute; right: 15px; }
 
 .wall-submit.wall-submit-reply 					{ margin: 2px 0 2px 20px; padding: 15px; background: #f5f5f5; }
@@ -18,9 +17,3 @@
 
 .comment.wall-comment-reply 					{ min-height: 0; padding-left: 55px; }
 .comment.wall-comment-reply .comment-avatar 	{ width: 30px; height: 30px; }
-
-.wall-more 							{ display: block; background-color: #eeeeee; color: #999999; text-align: center; text-decoration: none; padding: 12px 0; margin: 2px 0; }
-.wall-more:hover 					{ background-color: #e6e6e6; }
-.wall-more.wall-more-reply 			{ margin-left: 20px; }
-.wall-more.loader 					{ background: #f5f5f5 url(../images/loader.gif) 50% 50% no-repeat; }
-.wall-more.loader .wall-more-inner 	{ visibility: hidden; }

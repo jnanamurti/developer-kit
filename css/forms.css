@@ -4,12 +4,12 @@
 
 form .icon-question-sign { cursor: help; }
 
-.captcha-image 		{ vertical-align: top; }
+.captcha-image { vertical-align: top; }
 
 .form-profile 					{ position: relative; }
 .form-profile .avatar-change 	{ position: absolute; top: 91px; right: 20px; font-size: 11px; }
 
-.mceEditor 			{ display: block; margin-bottom: 20px; }
+.mceEditor { display: block; margin-bottom: 20px; }
 
 
 /* Валидатор (регистрация)

@@ -6,14 +6,14 @@
 
 .profile .avatar 		{ position: absolute; top: 0; left: 0; }
 
-.profile .vote-label	{ color: #aaaaaa; font-size: 11px; text-align: center; }
-.profile .count 		{ color: #007fff; font-size: 11px; text-align: center; }
+.profile .vote-label	{ color: #999999; font-size: 12px; text-align: center; }
+.profile .count 		{ color: #007fff; font-size: 12px; }
 
 .profile .vote 			{ float: right; margin-left: 20px; }
 .profile .strength 		{ float: right; }
 
-.profile .user-login 				{ width: 350px; margin-bottom: 0; }
-.profile .user-login.no-user-name 	{ position: relative; top: 10px; }
-.profile .user-name 				{ color: #777; }
+.profile .user-login 				{ margin: 0; padding-right: 160px; }
+.profile .user-login.no-user-name 	{ position: relative; }
+.profile .user-name 				{ color: #999999; }
 
-.profile-info-about 	{ padding: 15px 20px 20px; background: #ffc; margin-bottom: 40px; }
+.profile-info-about 	{ padding: 15px 20px 20px; background: #ffffcc; margin-bottom: 40px; }

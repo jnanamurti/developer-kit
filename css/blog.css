@@ -7,12 +7,11 @@
 
 /* Header */
 .blog .blog-header 			{ position: relative; padding: 0 100px 0 68px; margin-bottom: 20px; min-height: 48px; }
-.blog .blog-header h2 		{ margin-bottom: 3px; }
-.blog .blog-header h2 i 	{ position: relative; top: 5px; }
+.blog .blog-header h2 		{ margin: 0; }
 .blog .blog-header .avatar 	{ position: absolute; top: 0; left: 0; }
 
 .blog .blog-header .vote 		{ position: absolute; top: 0; right: 0; }
-.blog .blog-header .vote-label	{ text-align: center; font-size: 11px; color: #aaaaaa; }
+.blog .blog-header .vote-label	{ text-align: center; font-size: 12px; color: #aaaaaa; }
 
 .blog .blog-header .actions 	{ font-size: 12px; }
 

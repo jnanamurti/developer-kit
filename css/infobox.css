@@ -23,8 +23,8 @@
 .infobox .tip-arrow.tip-arrow-right 	{ top: 50%; margin-top: -6px; right: -12px; border-bottom-color: transparent !important; border-top-color: transparent !important; border-right-color: transparent !important; }
 .infobox .tip-arrow.tip-arrow-left 		{ top: 50%; margin-top: -6px; left: -12px; border-bottom-color: transparent !important; border-top-color: transparent !important; border-left-color: transparent !important; }
 
-.infobox a 			{ color: #B4B8ED; }
-.infobox a:hover 	{ color: #999DDB; }
+.infobox a 			{ color: #b4b8ed; }
+.infobox a:hover 	{ color: #999ddb; }
 
 
 /* Default Tip */

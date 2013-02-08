@@ -20,8 +20,8 @@
 
 <form id="photoset-upload-form" method="POST" enctype="multipart/form-data" onsubmit="return false;" class="modal modal-image-upload">
 	<header class="modal-header">
+		<button type="button" class="close jqmClose" data-dismiss="modal" aria-hidden="true">&times;</button>
 		<h3>{$aLang.uploadimg}</h3>
-		<a href="#" class="close jqmClose"></a>
 	</header>
 	
 	<div id="topic-photo-upload-input" class="topic-photo-upload-input modal-body">
@@ -30,7 +30,7 @@
 
 		<button type="submit" class="btn btn-primary" onclick="ls.photoset.upload();">{$aLang.topic_photoset_upload_choose}</button>
 		<button type="submit" class="btn" onclick="ls.photoset.closeForm();">{$aLang.topic_photoset_upload_close}</button>
-		
+
 		<input type="hidden" name="is_iframe" value="true" />
 		<input type="hidden" name="topic_id" value="{$_aRequest.topic_id}" />
 	</div>

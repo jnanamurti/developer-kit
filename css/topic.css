@@ -3,17 +3,15 @@
 -------------------------------------------- */
 
 .topic 				{ overflow: hidden; zoom: 1; margin-bottom: 40px; }
-.topic:last-child 	{ margin-bottom: 0; }
 
 
 /* Header */
-.topic .topic-header .topic-title i 			{ position: relative; top: 5px; cursor: help; }
+.topic .topic-header .topic-title i 			{ cursor: help; }
 .topic .topic-header .topic-info 				{ margin-bottom: 10px; color: #999999; font-size: 12px; }
 .topic .topic-header .topic-info .topic-blog 	{ margin-right: 10px; font-weight: bold; }
 .topic .topic-header .topic-info time 			{ margin-right: 10px; }
 .topic .topic-header .topic-info .actions,
-.topic .topic-header .topic-info .actions li	{ display: inline; float: none; margin-bottom: 0; }
-.topic .topic-header .topic-info .actions li	{ margin-right: 10px; }
+.topic .topic-header .topic-info .actions li	{ display: inline; float: none; }
 
 
 /* Content */
@@ -22,12 +20,16 @@
 
 /* Topic Link */
 .topic .topic-url 		{ margin-bottom: 10px; }
-.topic .topic-url a 	{ color: #3fb618; }
+.topic .topic-url a 	{ color: #468847; }
 
 
 /* Tags */
 .topic .topic-footer .topic-tags 						{ margin-bottom: 5px; font-size: 12px; color: #999999; }
-.topic .topic-footer .topic-tags li.topic-tags-user a 	{ color: #3fb618; }
+.topic .topic-footer .topic-tags li 					{ padding: 0; }
+.topic .topic-footer .topic-tags li i 					{ margin-right: 3px; }
+
+.topic .topic-footer .topic-tags li.topic-tags-edit 	{ margin-left: 10px; }
+.topic .topic-footer .topic-tags li.topic-tags-user a 	{ color: #468847; }
 
 
 /* Info */
@@ -36,6 +38,7 @@
 .topic .topic-footer .topic-info li.topic-info-author 			{ padding-left: 0; }
 .topic .topic-footer .topic-info li.topic-info-author a 		{ font-weight: bold; }
 .topic .topic-footer .topic-info li.topic-info-comments span 	{ color: #999999; }
+.topic .topic-footer .topic-info li.topic-info-share a 			{ position: relative; top: -1px; }
 
 
 /* Share */
@@ -54,7 +57,7 @@
 .topic .poll .poll-result li dl dd 			{ float: left; width: 400px; }
 
 .topic .poll .poll-result li dl dd div 		{ height: 6px; margin-top: 8px; background-color: #eeeeee; overflow: hidden; }
-.topic .poll .poll-result li.most dl dd div { background-color: #3fb618; }
+.topic .poll .poll-result li.most dl dd div { background-color: #468847; }
 
 .topic .poll .poll-total 					{ color: #999999; font-size: 12px; margin-left: 10px; }
 
@@ -66,9 +69,9 @@
 .topic.topic-type-photoset .topic-photo-preview .topic-photo-count 	{ display: none; cursor: pointer; position: absolute; top: 5px; right: 5px; font-size: 12px; color: #3fb618; padding: 4px 7px; background: rgba(0,0,0,.6); }
 .topic.topic-type-photoset .topic-photo-preview .topic-photo-desc 	{ display: none; width: 96%; padding: 7px 2%; position: absolute; bottom: 0; left: 0; color: #ffffff; font-size: 12px; line-height: 16px; background: rgba(0,0,0,.7); }
 
-.topic.topic-type-photoset .topic-photo-images 							{ padding-top: 10px; margin-bottom: 10px; }
-.topic.topic-type-photoset .topic-photo-images h2 						{ border-bottom: 1px solid #eee; }
-.topic.topic-type-photoset .topic-photo-images ul li 					{ margin-bottom: 10px; }
+.topic.topic-type-photoset .topic-photo-images 						{ padding-top: 10px; margin-bottom: 10px; }
+.topic.topic-type-photoset .topic-photo-images h2 					{ border-bottom: 1px solid #eee; }
+.topic.topic-type-photoset .topic-photo-images ul li 				{ margin-bottom: 10px; }
 
 .topic.topic-type-photoset .topic-photo-images .topic-photo-more 		{ display: block; text-align: center; padding: 12px 0; margin-bottom: 10px; text-decoration: none; background-color: #eeeeee; color: #999999; }
 .topic.topic-type-photoset .topic-photo-images .topic-photo-more:hover 	{ background-color: #e6e6e6; }
@@ -78,8 +81,8 @@
 .topic-photo-upload ul li 							{ min-height: 100px; _height: 100px; margin-bottom: 10px; padding-left: 110px; position: relative; font-size: 12px; }
 .topic-photo-upload ul li img 						{ position: absolute; top: 0; left: 0; }
 .topic-photo-upload ul li label 					{ color: #999999; }
-.topic-photo-upload ul li textarea 					{ height: 60px; }
-.topic-photo-upload ul li .image-delete 			{ margin-right: 10px; }
+.topic-photo-upload ul li textarea 					{ height: 60px; -moz-box-sizing: border-box; display: block; width: 100%; }
+.topic-photo-upload ul li .image-delete 			{ margin-right: 10px; color: #b94a48; }
 .topic-photo-upload ul li .mark-as-preview 			{ display: none; }
 .topic-photo-upload ul li:hover .mark-as-preview 	{ display: inline; }
 .topic-photo-upload .topic-photo-upload-rules 		{ color: #999999; font-size: 12px; line-height: 16px; margin-bottom: 20px; }

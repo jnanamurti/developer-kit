@@ -30,8 +30,8 @@
 	cursor: pointer;
 }
 
-#notifier .n-box h3 { color: #ffffff; }
-#notifier .n-box p { margin: 0; font-size: 12px; }
+#notifier .n-box h3 { margin-top: 0; color: #ffffff; }
+#notifier .n-box p 	{ margin-bottom: 0; font-size: 12px; }
 
 #notifier .n-box.n-notice 		{ background: #fff1a8; color: #333333; }
 #notifier .n-box.n-notice h3 	{ color: #333333; }
