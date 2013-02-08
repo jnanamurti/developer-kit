@@ -62,7 +62,7 @@
 {hook run='profile_sidebar_menu_before' oUserProfile=$oUserProfile}
 
 
-<section class="block block-type-profile-nav well">
+<section class="block block-type-profile-nav">
 	<ul class="nav nav-list">
 		{hook run='profile_sidebar_menu_item_first' oUserProfile=$oUserProfile}
 		<li {if $sAction=='profile' && ($aParams[0]=='whois' or $aParams[0]=='')}class="active"{/if}><a href="{$oUserProfile->getUserWebPath()}">{$aLang.user_menu_profile_whois}</a></li>

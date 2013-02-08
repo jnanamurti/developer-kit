@@ -1,10 +1,8 @@
 {include file='header.tpl'}
-
-
 {include file='menu.settings.tpl'}
 
 
-<small class="note note-header input-width-400">{$aLang.settings_invite_notice} "{$aLang.settings_invite_submit}"</small>
+<span class="help-block"><small>{$aLang.settings_invite_notice} "{$aLang.settings_invite_submit}"</small></span>
 
 {hook run='settings_invite_begin'}
 
@@ -18,14 +16,16 @@
 	</p>
 
 	<p><label for="invite_mail">{$aLang.settings_invite_mail}:</label>
-	<input type="text" name="invite_mail" id="invite_mail" class="input-text input-width-200" /><br />
-	<small class="note">{$aLang.settings_invite_mail_notice}</small></p>
+	<input type="text" name="invite_mail" id="invite_mail" class="span4" /><br />
+	<span class="help-block"><small>{$aLang.settings_invite_mail_notice}</small></span></p>
 
 	{hook run='form_settings_invite_end'}
-
-	<button type="submit" name="submit_invite" class="button button-primary" />{$aLang.settings_invite_submit}</button>
+	<br />
+	
+	<button type="submit" name="submit_invite" class="btn btn-primary" />{$aLang.settings_invite_submit}</button>
 </form>
 
 {hook run='settings_invite_end'}
+
 
 {include file='footer.tpl'}

@@ -30,7 +30,7 @@
 .block.block-type-profile-note p 					{ margin-bottom: 10px; }
 .block.block-type-profile-note .actions 			{ margin-bottom: 0; }
 
-.block.block-type-profile-nav 						{ border: none; padding: 0; }
+.block.block-type-profile-nav 						{ border: none; padding: 10px 0; background-color: #F5F5F5; }
 
 .block.block-type-profile-actions ul li				{ margin-bottom: 5px; }
 .block.block-type-profile-actions ul li:last-child	{ margin-bottom: 0; }

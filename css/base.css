@@ -83,3 +83,5 @@ a.delete 			{ color: #ff0039; }
 .help .help-col.help-wide 	{ float: none; width: 94%; }
 .help .help-item 			{ margin-bottom: 20px; }
 .help .help-item:last-child { margin-bottom: 0; }
+
+.help-block.span3 { margin-left: 0; }
