@@ -26,10 +26,10 @@
 				<h3>{$aLang.uploadimg}</h3>
 			</header>
 			
-			<div class="modal-content">
+			<div class="modal-body">
 				<img src="" alt="" id="foto-resize-original-img"><br />
-				<button type="submit" class="button button-primary" onclick="return ls.user.resizeFoto();">{$aLang.settings_profile_avatar_resize_apply}</button>
-				<button type="submit" class="button" onclick="return ls.user.cancelFoto();">{$aLang.settings_profile_avatar_resize_cancel}</button>
+				<button type="submit" class="btn btn-primary" onclick="return ls.user.resizeFoto();">{$aLang.settings_profile_avatar_resize_apply}</button>
+				<button type="submit" class="btn" onclick="return ls.user.cancelFoto();">{$aLang.settings_profile_avatar_resize_cancel}</button>
 			</div>
 		</div>
 	{/if}
@@ -45,7 +45,7 @@
 
 	<section class="block block-type-profile-actions">
 		<div class="block-content">
-			<ul class="profile-actions" id="profile_actions">
+			<ul class="unstyled profile-actions" id="profile_actions">
 				{include file='actions/ActionProfile/friend_item.tpl' oUserFriend=$oUserProfile->getUserFriend()}
 				<li><a href="{router page='talk'}add/?talk_users={$oUserProfile->getLogin()}">{$aLang.user_write_prvmsg}</a></li>						
 				<li>
@@ -97,16 +97,16 @@
 				{/if}
 			</p>
 			
-			<ul class="actions">
+			<ul class="unstyled inline actions">
 				<li><a href="#" onclick="return ls.usernote.showForm();" class="link-dotted">{$aLang.user_note_form_edit}</a></li>
 				<li><a href="#" onclick="return ls.usernote.remove({$oUserProfile->getId()});" class="link-dotted">{$aLang.user_note_form_delete}</a></li>
 			</ul>
 		</div>
 		
 		<div id="usernote-form" style="display: none;">
-			<p><textarea rows="4" cols="20" id="usernote-form-text" class="input-text input-width-full"></textarea></p>
-			<button type="submit" onclick="return ls.usernote.save({$oUserProfile->getId()});" class="button button-primary">{$aLang.user_note_form_save}</button>
-			<button type="submit" onclick="return ls.usernote.hideForm();" class="button">{$aLang.user_note_form_cancel}</button>
+			<p><textarea rows="4" cols="20" id="usernote-form-text" class="input-block-level"></textarea></p>
+			<button type="submit" onclick="return ls.usernote.save({$oUserProfile->getId()});" class="btn btn-primary">{$aLang.user_note_form_save}</button>
+			<button type="submit" onclick="return ls.usernote.hideForm();" class="btn">{$aLang.user_note_form_cancel}</button>
 		</div>
 		
 		<a href="#" onclick="return ls.usernote.showForm();" id="usernote-button-add" class="link-dotted" {if $oUserNote}style="display:none;"{/if}>{$aLang.user_note_add}</a>

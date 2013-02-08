@@ -6,7 +6,6 @@
 {assign var="oGeoTarget" value=$oUserProfile->getGeoTarget()}
 
 
-			
 {include file='actions/ActionProfile/profile_top.tpl'}
 {include file='menu.profile_whois.tpl'}
 
@@ -18,11 +17,11 @@
 	</div>
 {/if}
 
-{assign var="aUserFieldValues" value=$oUserProfile->getUserFieldValues(true,array(''))}
 
+{assign var="aUserFieldValues" value=$oUserProfile->getUserFieldValues(true,array(''))}
 {if $oUserProfile->getProfileSex()!='other' || $oUserProfile->getProfileBirthday() || $oGeoTarget || $oUserProfile->getProfileAbout() || count($aUserFieldValues)}
+
 	<h4>{$aLang.profile_privat}</h4>
-	
 	
 	<table class="table table-profile-info">		
 		{if $oUserProfile->getProfileSex()!='other'}
@@ -75,7 +74,9 @@
 	</table>
 {/if}
 
+
 {hook run='profile_whois_item_after_privat' oUserProfile=$oUserProfile}
+
 
 {assign var="aUserFieldContactValues" value=$oUserProfile->getUserFieldValues(true,array('contact'))}
 {if $aUserFieldContactValues}
@@ -110,7 +111,7 @@
 {hook run='profile_whois_item' oUserProfile=$oUserProfile}
 
 
-<h2>{$aLang.profile_activity}</h2>
+<h3>{$aLang.profile_activity}</h3>
 
 <table class="table table-profile-info">
 
@@ -123,7 +124,6 @@
 		</tr>
 	{/if}
 	
-	
 	{if $oConfig->GetValue('general.reg.invite') and $aUsersInvite}
 		<tr>
 			<td class="cell-label">{$aLang.profile_invite_to}:</td>
@@ -135,7 +135,6 @@
 		</tr>
 	{/if}
 	
-	
 	{if $aBlogsOwner}
 		<tr>
 			<td class="cell-label">{$aLang.profile_blogs_self}:</td>
@@ -146,7 +145,6 @@
 			</td>
 		</tr>
 	{/if}
-	
 	
 	{if $aBlogAdministrators}
 		<tr>
@@ -160,7 +158,6 @@
 		</tr>
 	{/if}
 	
-	
 	{if $aBlogModerators}
 		<tr>
 			<td class="cell-label">{$aLang.profile_blogs_moderation}:</td>
@@ -172,7 +169,6 @@
 			</td>
 		</tr>
 	{/if}
-	
 	
 	{if $aBlogUsers}
 		<tr>
@@ -186,15 +182,12 @@
 		</tr>
 	{/if}
 
-	
 	{hook run='profile_whois_activity_item' oUserProfile=$oUserProfile}
-	
 	
 	<tr>
 		<td class="cell-label">{$aLang.profile_date_registration}:</td>
 		<td>{date_format date=$oUserProfile->getDateRegister()}</td>
 	</tr>	
-	
 	
 	{if $oSession}				
 		<tr>
