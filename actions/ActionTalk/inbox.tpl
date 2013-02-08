@@ -1,5 +1,4 @@
 {include file='header.tpl' noShowSystemMessage=false}
-
 {include file='menu.talk.tpl'}
 
 
@@ -11,9 +10,10 @@
 		<input type="hidden" name="submit_talk_read" id="form_talks_list_submit_read" value="" />
 		<input type="hidden" name="submit_talk_del" id="form_talks_list_submit_del" value="" />
 
-		<button type="submit" onclick="ls.talk.makeReadTalks()" class="button">{$aLang.talk_inbox_make_read}</button>
-		<button type="submit" onclick="if (confirm('{$aLang.talk_inbox_delete_confirm}')){ ls.talk.removeTalks() };" class="button">{$aLang.talk_inbox_delete}</button>
+		<button type="submit" onclick="ls.talk.makeReadTalks()" class="btn">{$aLang.talk_inbox_make_read}</button>
+		<button type="submit" onclick="if (confirm('{$aLang.talk_inbox_delete_confirm}')){ ls.talk.removeTalks() };" class="btn">{$aLang.talk_inbox_delete}</button>
 		<br /><br />
+		
 		<table class="table table-hover table-talk">
 			<thead>
 				<tr>
@@ -77,6 +77,6 @@
 	<div class="notice-empty">{$aLang.talk_inbox_empty}</div>
 {/if}
 
-			
+
 {include file='paging.tpl' aPaging=$aPaging}
 {include file='footer.tpl'}

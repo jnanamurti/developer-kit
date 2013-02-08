@@ -1,5 +1,4 @@
 {include file='header.tpl'}
-
 {include file='menu.talk.tpl'}
 
 

@@ -3,14 +3,15 @@
 		<a href="#" class="link-dotted" onclick="jQuery('#block_talk_friends_content').toggle(); return false;">{$aLang.block_friends}</a>
 	</header>
 
-	
 	<div class="block-content" id="block_talk_friends_content">
 		{if $aUsersFriend}
-			<ul class="list" id="friends">
+			<ul class="unstyled" id="friends">
 				{foreach from=$aUsersFriend item=oFriend}
 					<li>
-						<input id="talk_friend_{$oFriend->getId()}" type="checkbox" name="friend[{$oFriend->getId()}]" class="input-checkbox" /> 
-						<label for="talk_friend_{$oFriend->getId()}" id="talk_friend_{$oFriend->getId()}_label">{$oFriend->getLogin()}</label>
+						<label class="checkbox">
+							<input id="talk_friend_{$oFriend->getId()}" type="checkbox" name="friend[{$oFriend->getId()}]" class="input-checkbox" /> 
+							<label for="talk_friend_{$oFriend->getId()}" id="talk_friend_{$oFriend->getId()}_label">{$oFriend->getLogin()}</label>
+						</label>
 					</li>
 				{/foreach}
 			</ul>

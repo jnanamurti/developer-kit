@@ -1,9 +1,8 @@
 {include file='header.tpl'}
-
 {include file='menu.talk.tpl'}
 
-{assign var="oUser" value=$oTalk->getUser()}
 
+{assign var="oUser" value=$oTalk->getUser()}
 
 <article class="topic topic-type-talk">
 	<header class="topic-header">
@@ -15,8 +14,8 @@
 				{date_format date=$oTalk->getDate() format="j F Y, H:i"}
 			</time>
 			
-			<ul class="actions">								   
-				<li class="delete"><a href="{router page='talk'}delete/{$oTalk->getId()}/?security_ls_key={$LIVESTREET_SECURITY_KEY}" onclick="return confirm('{$aLang.talk_inbox_delete_confirm}');" class="delete">{$aLang.delete}</a></li>
+			<ul class="unstyled inline actions">								   
+				<li class="delete"><a href="{router page='talk'}delete/{$oTalk->getId()}/?security_ls_key={$LIVESTREET_SECURITY_KEY}" onclick="return confirm('{$aLang.talk_inbox_delete_confirm}');" class="text-error">{$aLang.delete}</a></li>
 			</ul>
 		</div>
 	</header>
@@ -28,7 +27,7 @@
 	{include file='actions/ActionTalk/speakers.tpl'}
 
 	<footer class="topic-footer">
-		<ul class="topic-info">
+		<ul class="unstyled inline topic-info">
 			<li class="topic-info-author"><a href="{$oUser->getUserWebPath()}" class="author">{$oUser->getLogin()}</a></li>
 			<li class="topic-info-favourite"><a href="#" onclick="return ls.favourite.toggle({$oTalk->getId()},this,'talk');" class="favourite {if $oTalk->getIsFavourite()}active{/if}"></a></li>
 			{hook run='talk_read_info_item' talk=$oTalk}
@@ -48,6 +47,6 @@
 	sNoticeCommentAdd=$aLang.topic_comment_add
 	bNoCommentFavourites=true}
 {/if}
-			
-			
+
+
 {include file='footer.tpl'}
