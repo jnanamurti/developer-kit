@@ -45,7 +45,7 @@
 
 
 {if $iCountWall-count($aWall)}
-	<a href="#" onclick="return ls.wall.loadNext();" id="wall-button-next" class="wall-more"><span class="wall-more-inner">{$aLang.wall_load_more} (<span id="wall-count-next">{$iCountWall-count($aWall)}</span>)</span></a>
+	<a href="#" onclick="return ls.wall.loadNext();" id="wall-button-next" class="btn btn-large btn-block btn-primary"><span class="wall-more-inner">{$aLang.wall_load_more} (<span id="wall-count-next">{$iCountWall-count($aWall)}</span>)</span></a>
 {/if}
 
 

@@ -26,14 +26,12 @@
 		</div>
 		
 		
-		{if count($aReplyWall) < $oWall->getCountReply()}
-			<a href="#" onclick="return ls.wall.loadReplyNext({$oWall->getId()});" id="wall-reply-button-next-{$oWall->getId()}" class="wall-more wall-more-reply">
-				<span class="wall-more-inner">{$aLang.wall_load_reply_more} <span id="wall-reply-count-next-{$oWall->getId()}">{$oWall->getCountReply()}</span> {$oWall->getCountReply()|declension:$aLang.comment_declension:'russian'}</span>
-			</a>
-		{/if}
-
-		
 		<div id="wall-reply-container-{$oWall->getId()}" class="comment-wrapper">
+			{if count($aReplyWall) < $oWall->getCountReply()}
+				<a href="#" onclick="return ls.wall.loadReplyNext({$oWall->getId()});" id="wall-reply-button-next-{$oWall->getId()}" class="btn btn-block">
+					<span class="wall-more-inner">{$aLang.wall_load_reply_more} <span id="wall-reply-count-next-{$oWall->getId()}">{$oWall->getCountReply()}</span> {$oWall->getCountReply()|declension:$aLang.comment_declension:'russian'}</span>
+				</a>
+			{/if}
 			{if $aReplyWall}
 				{include file='actions/ActionProfile/wall_items_reply.tpl'}
 			{/if}
