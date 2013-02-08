@@ -67,11 +67,6 @@
 
 /* Поиск 
 ---------------------------------------------------- */
-.search 					{ width: 200px; position: relative; }
-.search .input-text 		{ width: 200px; padding-right: 25px; }
-.search .input-submit 		{ border: none; width: 16px; height: 16px; position: absolute; top: 7px; right: 5px; filter: alpha(opacity=30); }
-.search .input-submit:hover { filter: alpha(opacity=50); }
-
 .search-item 				{ margin-bottom: 20px; padding: 15px; background-color: #f5f5f5; }
 .search-item .input-text 	{ width: 100%; padding-right: 5px; }
 
