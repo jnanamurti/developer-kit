@@ -103,23 +103,6 @@
 .item-list li .author 		{ color: #333333; font-weight: bold; margin-right: 5px; }
 
 
-/* Хелперы
----------------------------------------------------- */
-.mt-10 { margin-bottom: 10px !important; }
-.mt-20 { margin-bottom: 20px !important; }
-
-.mb-10 { margin-bottom: 10px !important; }
-.mb-15 { margin-bottom: 15px !important; }
-.mb-20 { margin-bottom: 20px !important; }
-.mb-30 { margin-bottom: 30px !important; }
-
-.ta-c { text-align: center !important; }
-.ta-r { text-align: right !important; }
-.va-m { vertical-align: middle; }
-.fl-r { float: right !important; }
-.fl-l { float: left !important; }
-
-
 /* Разное
 ---------------------------------------------------- */
 .loader { background: #f5f5f5 url(../images/loader.gif) 50% 50% no-repeat; }

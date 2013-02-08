@@ -2,10 +2,9 @@
 	СЕТКА
 -------------------------------------------- */
 
-.header 			{ position: relative; padding: 40px 0; }
-.header .container 	{ position: relative; z-index: 2; }
+.header 					{ position: relative; padding: 40px 0; }
 
 .content 					{ position: relative; }
 .content.content-full-width { width: 100%; }
 
-.footer { padding: 40px 0; margin-top: 70px; }
+.footer 					{ padding: 40px 0; margin-top: 40px; }

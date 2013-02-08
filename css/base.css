@@ -7,14 +7,11 @@ body { padding-top: 40px; position: relative; }
 
 /* Ссылки
 ---------------------------------------------------- */
-a.link-dashed 		{ border-bottom: 1px dashed #007fff; }
-a.link-dashed:hover { color: #0066cc; border-color: #0066cc; text-decoration: none; }
+a.link-dashed 		{ border-bottom: 1px dashed #0088cc; }
+a.link-dashed:hover { color: #005580; border-color: #005580; text-decoration: none; }
 
-a.link-dotted 		{ border-bottom: 1px dotted #007fff; }
-a.link-dotted:hover { color: #0066cc; border-color: #0066cc; text-decoration: none; }
-
-a.edit 				{ color: #3fb618; }
-a.delete 			{ color: #ff0039; }
+a.link-dotted 		{ border-bottom: 1px dotted #0088cc; }
+a.link-dotted:hover { color: #005580; border-color: #005580; text-decoration: none; }
 
 
 /* Заголовки
@@ -25,19 +22,13 @@ a.delete 			{ color: #ff0039; }
 /* Шапка сайта
 ---------------------------------------------------- */
 .header 				{ color: #ffffff; background-color: #00baf0; }
-
 .header .site-name 		{ font-size: 40px; line-height: 1em; margin: 10px 0; }
-
-
-/* Навигация
----------------------------------------------------- */
-.subnav .button-write 	{ margin-top: 5px; }
 
 
 /* Футер
 ---------------------------------------------------- */
 .footer 			{ border-top: 1px solid #eeeeee; background-color: #f5f5f5; }
-.footer .copyright 	{ float: right; font-size: 11px; text-align: right; }
+.footer .copyright 	{ float: right; font-size: 12px; text-align: right; }
 
 
 /* Stat
@@ -48,17 +39,15 @@ a.delete 			{ color: #ff0039; }
 
 /* Stream
 ---------------------------------------------------- */
-.stream-get-more 		{ display: block; text-align: center; padding: 12px 0; margin-top: 40px; background: #eeeeee; color: #999999; text-decoration: none; }
-.stream-get-more:hover 	{ background-color: #e6e6e6; }
 .stream_loading 		{ background-color: #f5f5f5 url(../images/loader.gif) no-repeat center; }
-
-.stream-comment-preview { padding: 5px 10px; margin-top: 10px; font-size: 12px; background-color: #f5f5f5; }
 
 .stream-list 						{ margin-bottom: 20px; }
 .stream-list li.stream-item 		{ margin-bottom: 20px; min-height: 48px; _height: 48px; border-bottom: 1px solid #eeeeee; padding: 0 0 20px 63px; position: relative; }
 .stream-list li.stream-item .avatar { position: absolute; top: 0; left: 0; }
 .stream-list li.stream-item .date 	{ display: block; color: #999999; font-size: 12px; }
 .stream-list li.stream-header-date 	{ font-size: 16px; color: #999999; margin: 40px 0 20px 0; padding-bottom: 5px; border-bottom: 1px solid #eeeeee; }
+
+.stream-comment-preview { padding: 5px 10px; margin-top: 10px; font-size: 12px; background-color: #f5f5f5; }
 
 
 /* Userfields
@@ -69,13 +58,8 @@ a.delete 			{ color: #ff0039; }
 
 /* Misc
 ---------------------------------------------------- */
-.nav-pills > .drafts 			{ float: right !important; }
-
-.poll-create 					{ padding: 15px 20px; margin-bottom: 20px; background-color: #eeeeee; }
-
-.question-list 					{ margin-bottom: 10px; }
-.question-list li 				{ margin-bottom: 5px; }
-.question-list li .input-text	{ margin-right: 10px; }
+.poll-create 				{ padding: 15px 20px; margin-bottom: 20px; background-color: #eeeeee; }
+.question-list li .span4	{ margin-right: 10px; }
 
 .help 						{ display: none; position: relative; padding: 0 0 20px; margin: 13px 0 0; color: #999999; font-size: 12px; line-height: 18px; border: 1px solid #dddddd; background-color: #ffffff; }
 .help:before 				{ display: block; content: ""; position: absolute; top: -12px; left: 15px; width: 0; height: 0; border-width: 6px; border-color: transparent transparent #ffffff transparent; border-style: solid; }
@@ -84,4 +68,4 @@ a.delete 			{ color: #ff0039; }
 .help .help-item 			{ margin-bottom: 20px; }
 .help .help-item:last-child { margin-bottom: 0; }
 
-.help-block.span3 { margin-left: 0; }
+.help-block.span3 			{ margin-left: 0; }
