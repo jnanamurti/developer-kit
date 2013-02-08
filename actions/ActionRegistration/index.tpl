@@ -24,6 +24,7 @@
 	});
 </script>
 
+
 <h2 class="page-header">{$aLang.registration}</h2>
 
 {hook run='registration_begin'}
@@ -31,26 +32,26 @@
 <form action="{router page='registration'}" method="post" id="registration-form">
 	{hook run='form_registration_begin'}
 
-	<p><label for="popup-registration-login">{$aLang.registration_login}</label>
-	<input type="text" name="login" id="popup-registration-login" value="{$_aRequest.login}" class="input-text input-width-300 js-ajax-validate" />
+	<p><label for="popup-registration-login">{$aLang.registration_login}
+	<i class="icon-question-sign js-tip-help" title="{$aLang.registration_login_notice}"></i></label>
+	<input type="text" name="login" id="popup-registration-login" value="{$_aRequest.login}" class="span4 js-ajax-validate" />
 	<i class="icon-ok-green validate-ok-field-login" style="display: none"></i>
-	<i class="icon-question-sign js-tip-help" title="{$aLang.registration_login_notice}"></i>
 	<small class="validate-error-hide validate-error-field-login"></small></p>
 
-	<p><label for="popup-registration-mail">{$aLang.registration_mail}</label>
-	<input type="text" name="mail" id="popup-registration-mail" value="{$_aRequest.mail}" class="input-text input-width-300 js-ajax-validate" />
+	<p><label for="popup-registration-mail">{$aLang.registration_mail}
+	<i class="icon-question-sign js-tip-help" title="{$aLang.registration_mail_notice}"></i></label>
+	<input type="text" name="mail" id="popup-registration-mail" value="{$_aRequest.mail}" class="span4 js-ajax-validate" />
 	<i class="icon-ok-green validate-ok-field-mail" style="display: none"></i>
-	<i class="icon-question-sign js-tip-help" title="{$aLang.registration_mail_notice}"></i>
 	<small class="validate-error-hide validate-error-field-mail"></small></p>
 
-	<p><label for="popup-registration-user-password">{$aLang.registration_password}</label>
-	<input type="password" name="password" id="popup-registration-user-password" value="" class="input-text input-width-300 js-ajax-validate" />
+	<p><label for="popup-registration-user-password">{$aLang.registration_password}
+	<i class="icon-question-sign js-tip-help" title="{$aLang.registration_password_notice}"></i></label>
+	<input type="password" name="password" id="popup-registration-user-password" value="" class="span4 js-ajax-validate" />
 	<i class="icon-ok-green validate-ok-field-password" style="display: none"></i>
-	<i class="icon-question-sign js-tip-help" title="{$aLang.registration_password_notice}"></i>
 	<small class="validate-error-hide validate-error-field-password"></small></p>
 
 	<p><label for="popup-registration-user-password-confirm">{$aLang.registration_password_retry}</label>
-	<input type="password" value="" id="popup-registration-user-password-confirm" name="password_confirm" class="input-text input-width-300 js-ajax-validate" />
+	<input type="password" value="" id="popup-registration-user-password-confirm" name="password_confirm" class="span4 js-ajax-validate" />
 	<i class="icon-ok-green validate-ok-field-password_confirm" style="display: none"></i>
 	<small class="validate-error-hide validate-error-field-password_confirm"></small></p>
 
@@ -59,13 +60,14 @@
 	<img src="{cfg name='path.root.engine_lib'}/external/kcaptcha/index.php?{$_sPhpSessionName}={$_sPhpSessionId}" 
 		 onclick="this.src='{cfg name='path.root.engine_lib'}/external/kcaptcha/index.php?{$_sPhpSessionName}={$_sPhpSessionId}&n='+Math.random();" 
 		 class="captcha-image" />
-	<input type="text" name="captcha" id="captcha" value="" maxlength="3" class="input-text input-width-100 js-ajax-validate" />
+	<input type="text" name="captcha" id="captcha" value="" maxlength="3" class="span3 js-ajax-validate" />
 	<small class="validate-error-hide validate-error-field-captcha"></small></p>
 	{/hookb}
 
 	{hook run='form_registration_end'}
+	<br />
 
-	<button type="submit" name="submit_register" class="button button-primary" id="registration-form-submit" disabled="disabled">{$aLang.registration_submit}</button>
+	<button type="submit" name="submit_register" class="btn btn-primary" id="registration-form-submit" disabled="disabled">{$aLang.registration_submit}</button>
 </form>
 
 {hook run='registration_end'}
