@@ -7,6 +7,9 @@ $config['view']['theme'] = 'default';
 
 $config['head']['default']['js'] = Config::Get('head.default.js');
 $config['head']['default']['js'][] = '___path.static.skin___/js/template.js';
+/* Framework */
+$config['head']['default']['js'][] = '___path.static.skin___/bootstrap/js/bootstrap.js';
+
 
 $config['head']['default']['css'] = array(
 	/* Framework */

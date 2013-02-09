@@ -32,3 +32,8 @@
 
 .modal .nav-pills 			{ margin-bottom: 10px; }
 .modal .nav-pills > li > a 	{ padding: 4px 8px; font-size: 12px; border-radius: 3px; }
+
+
+/* Navbar */
+.navbar .nav > li > a img.avatar 			{ width: 20px; height: 20px; vertical-align: top; }
+.navbar .nav > li > a.new-messages:hover i 	{ opacity: .8; }

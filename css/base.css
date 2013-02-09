@@ -32,7 +32,7 @@ a.link-dotted:hover { color: #005580; border-color: #005580; text-decoration: no
 /* Футер
 ---------------------------------------------------- */
 .footer 			{ border-top: 1px solid #eeeeee; background-color: #f5f5f5; }
-.footer .copyright 	{ float: right; font-size: 12px; text-align: right; }
+.footer .copyright 	{ font-size: 12px; text-align: right; }
 
 
 /* Stat

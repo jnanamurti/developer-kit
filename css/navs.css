@@ -2,10 +2,6 @@
 	НАВИГАЦИЯ
 -------------------------------------------- */
 
-/* Navbar */
-.navbar .nav > li > a img.avatar { width: 20px; height: 20px; vertical-align: top; }
-
-
 /* Dropdown */
 .dropdown-create 		{ position: relative; }
 .dropdown-create h2 a 	{ text-transform: lowercase; }

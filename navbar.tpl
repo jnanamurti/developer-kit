@@ -19,23 +19,34 @@
 			
 			<ul class="nav pull-right">
 				{if $oUserCurrent}
-					<li class="nav-userbar-username">
-						<a href="{$oUserCurrent->getUserWebPath()}" class="username">
+					{if $iUserCurrentCountTalkNew}
+						<li>
+							<a href="{router page='talk'}" class="new-messages" title="{if $iUserCurrentCountTalkNew}{$aLang.user_privat_messages_new}{/if}">
+								{$iUserCurrentCountTalkNew} <i class="icon-envelope icon-white"></i>
+							</a>
+						</li>
+					{/if}
+					<li class="dropdown nav-userbar-username">
+						<a data-toggle="dropdown" data-target="#" href="{$oUserCurrent->getUserWebPath()}" class="dropdown-toggle username">
 							<img src="{$oUserCurrent->getProfileAvatarPath(24)}" alt="avatar" class="avatar" />
 							{$oUserCurrent->getLogin()}
+							<b class="caret"></b>
 						</a>
+						<ul class="dropdown-menu">
+							<li><a href="{$oUserCurrent->getUserWebPath()}">{$aLang.user_menu_profile}</a></li>
+							<li><a href="{router page='talk'}" id="new_messages" title="{if $iUserCurrentCountTalkNew}{$aLang.user_privat_messages_new}{/if}">{$aLang.user_privat_messages}{if $iUserCurrentCountTalkNew} ({$iUserCurrentCountTalkNew}){/if}</a></li>
+							<li><a href="{$oUserCurrent->getUserWebPath()}favourites/topics/">{$aLang.user_menu_profile_favourites}</a></li>
+							<li><a href="{router page='settings'}profile/">{$aLang.user_settings}</a></li>
+							{hook run='userbar_item'}
+							<li class="divider"></li>
+							<li><a href="{router page='login'}exit/?security_ls_key={$LIVESTREET_SECURITY_KEY}">{$aLang.exit}</a></li>
 					</li>
-					<li><a href="{router page='talk'}" {if $iUserCurrentCountTalkNew}class="new-messages"{/if} id="new_messages" title="{if $iUserCurrentCountTalkNew}{$aLang.user_privat_messages_new}{/if}">{$aLang.user_privat_messages}{if $iUserCurrentCountTalkNew} ({$iUserCurrentCountTalkNew}){/if}</a></li>
-					<li><a href="{router page='settings'}profile/">{$aLang.user_settings}</a></li>
-					{hook run='userbar_item'}
-					<li><a href="{router page='login'}exit/?security_ls_key={$LIVESTREET_SECURITY_KEY}">{$aLang.exit}</a></li>
 				{else}
 					{hook run='userbar_item'}
 					<li><a href="{router page='login'}" class="js-login-form-show">{$aLang.user_login_submit}</a></li>
 					<li><a href="{router page='registration'}" class="js-registration-form-show">{$aLang.registration_submit}</a></li>
 				{/if}
-			</ul>
-			
+			</ul>	
 		</div>
 	</div>
 </nav>

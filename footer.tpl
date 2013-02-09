@@ -11,7 +11,7 @@
 	<footer class="footer">
 		<div class="container">
 	
-			<div class="copyright">
+			<div class="span3 pull-right copyright">
 				{hook run='copyright'}
 				<br />
 				Автор шаблона &mdash; <a href="http://webtown.by/profile/vOFFka/">вOFFка</a>
