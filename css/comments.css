@@ -45,16 +45,19 @@
 
 
 /* Info Block */
-.comment .comment-info 							{ font-size: 12px; }
+.comment .comment-info 							{ font-size: 12px; position: relative; overflow: hidden; zoom: 1; }
+.comment .comment-info li 						{ float: left; margin-right: 10px; }
 .comment .comment-info li.comment-author a 		{ font-weight: bold; }
 .comment .comment-info li.comment-author .comment-topic-author { color: #468847; }
 .comment .comment-info li.comment-date 			{ color: #999999; }
 .comment .comment-info li.comment-date a 		{ color: #999999; border-color: #999999; }
 .comment .comment-info li.goto-comment-child 	{ display: none; }
+.comment .comment-info li.vote 					{ position: absolute; top: 0; right: 0; margin: 0; }
 
 
 /* Actions */
 .comment .comment-actions 		{ font-size: 12px; margin: 10px 0 0; }
+.comment .comment-actions li 	{ padding: 0 10px 0 0; }
 
 
 /* Форма комментирования */

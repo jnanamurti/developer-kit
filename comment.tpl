@@ -21,7 +21,7 @@
 		<a href="{$oUser->getUserWebPath()}"><img src="{$oUser->getProfileAvatarPath(48)}" alt="avatar" class="comment-avatar" /></a>
 		
 		
-		<ul class="unstyled inline comment-info">
+		<ul class="unstyled comment-info">
 			<li class="comment-author">
 				<a href="{$oUser->getUserWebPath()}"  {if $iAuthorId == $oUser->getId()}title="{if $sAuthorNotice}{$sAuthorNotice}{/if}" class="comment-topic-author"{/if}>{$oUser->getLogin()}</a>
 			</li>
@@ -38,7 +38,7 @@
 			
 			
 			{if $oComment->getTargetType() != 'talk'}						
-				<li id="vote_area_comment_{$oComment->getId()}" class="pull-right vote 
+				<li id="vote_area_comment_{$oComment->getId()}" class="vote 
 																		{if $oComment->getRating() > 0}
 																			vote-count-positive
 																		{elseif $oComment->getRating() < 0}
