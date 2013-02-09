@@ -4,7 +4,7 @@
 
 <article class="topic topic-type-{$oTopic->getType()} js-topic">
 	<header class="topic-header">
-		<h1 class="topic-title">
+		{if $bTopicList}<h2 class="topic-title">{else}<h1 class="topic-title">{/if}
 			{if $bTopicList}
 				<a href="{$oTopic->getUrl()}">{$oTopic->getTitle()|escape:'html'}</a>
 			{else}
@@ -18,7 +18,7 @@
 			{if $oTopic->getType() == 'link'} 
 				<i class="icon-globe" title="{$aLang.topic_link}"></i>
 			{/if}
-		</h1>
+		{if $bTopicList}</h2>{else}</h1>{/if}
 
 		<div class="topic-info">
 			<a href="{$oBlog->getUrlFull()}" class="topic-blog">{$oBlog->getTitle()|escape:'html'}</a>

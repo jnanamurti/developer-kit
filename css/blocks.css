@@ -6,14 +6,15 @@
 .block:last-child 			{ margin-bottom: 0 !important; }
 
 .block .block-header 		{ position: relative; }
+.block .block-header h3 	{ margin-top: 0; line-height: 30px; }
 .block .block-header h3 a 	{ color: #333333; }
-.block footer 				{ margin-top: 15px; font-size: 12px; }
+.block footer 				{ margin-top: 15px; font-size: 12px; color: #999999; }
 
 .block .max-height-200 		{ overflow: auto; max-height: 200px; _height: expression( this.scrollHeight > 200 ? "200px" : "auto" ); position: relative; }
 
 
 /* Block Type - Stream */
-.block .block-update 		{ position: absolute; top: 0; right: 0; width: 16px; height: 16px; background: url(../images/update.gif) no-repeat; cursor: pointer; opacity: .3; }
+.block .block-update 		{ position: absolute; top: 3px; right: 0; width: 16px; height: 16px; background: url(../images/update.gif) no-repeat; cursor: pointer; opacity: .3; }
 .block .block-update:hover 	{ opacity: .5; }
 .block .block-update.active { background-position: -16px 0; opacity: .5; }
 
@@ -29,7 +30,7 @@
 .block.block-type-profile-note	 					{ background: #ffffcc; border: 1px solid #ffcc66; }
 .block.block-type-profile-note .actions 			{ margin-bottom: 0; }
 
-.block.block-type-profile-nav 						{ border: none; padding: 10px 0; background-color: #F5F5F5; }
+.block.block-type-profile-nav 						{ padding: 8px 0; }
 
 .block.block-type-profile-actions ul li				{ margin-bottom: 5px; }
 .block.block-type-profile-actions ul li:last-child	{ margin-bottom: 0; }

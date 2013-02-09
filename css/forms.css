@@ -11,6 +11,8 @@ form .icon-question-sign { cursor: help; }
 
 .mceEditor { display: block; margin-bottom: 20px; }
 
+.markItUpHeader ul { margin: 0; }
+.markItUpContainer textarea { border-radius: 0 0 4px 4px; }
 
 /* Валидатор (регистрация)
 ---------------------------------------------------------------*/

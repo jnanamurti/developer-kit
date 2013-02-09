@@ -6,14 +6,14 @@
 	
 	
 	<div class="block-content">
-		<ul class="nav nav-pills">
-			<li class="active js-block-tags-item" data-type="all"><a href="#">{$aLang.topic_favourite_tags_block_all}</a></li>
-			{if $oUserCurrent}
+		{if $oUserCurrent}
+			<ul class="nav nav-pills">
+				<li class="active js-block-tags-item" data-type="all"><a href="#">{$aLang.topic_favourite_tags_block_all}</a></li>
 				<li class="js-block-tags-item" data-type="user"><a href="#">{$aLang.topic_favourite_tags_block_user}</a></li>
-			{/if}
 
-			{hook run='block_tags_nav_item'}
-		</ul>
+				{hook run='block_tags_nav_item'}
+			</ul>
+		{/if}
 
 		<div id="block-more-content" style="display: none;">
 			<form action="" method="GET" class="js-tag-search-form search-tags">

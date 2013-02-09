@@ -4,6 +4,10 @@
 
 body { padding-top: 40px; position: relative; }
 
+a:focus, a:hover, a:active { outline: 0; }
+.btn:focus { outline: 0; }
+select:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus { outline: 0; }
+
 
 /* Ссылки
 ---------------------------------------------------- */
@@ -16,12 +20,13 @@ a.link-dotted:hover { color: #005580; border-color: #005580; text-decoration: no
 
 /* Заголовки
 ---------------------------------------------------- */
+.page-header 		{ margin-top: 0; }
 .page-header span 	{ color: #999999; }
 
 
 /* Шапка сайта
 ---------------------------------------------------- */
-.header 			{ color: #ffffff; background-color: #00baf0; }
+.header 			{ position: relative; color: #ffffff; background-color: #00baf0; }
 
 
 /* Футер
@@ -59,6 +64,7 @@ a.link-dotted:hover { color: #005580; border-color: #005580; text-decoration: no
 ---------------------------------------------------- */
 .poll-create 				{ padding: 15px 20px; margin-bottom: 20px; background-color: #eeeeee; }
 .question-list li .span4	{ margin-right: 10px; }
+
 
 .help 						{ display: none; position: relative; padding: 0 0 20px; margin: 13px 0 0; color: #999999; font-size: 12px; line-height: 18px; border: 1px solid #dddddd; background-color: #ffffff; }
 .help:before 				{ display: block; content: ""; position: absolute; top: -12px; left: 15px; width: 0; height: 0; border-width: 6px; border-color: transparent transparent #ffffff transparent; border-style: solid; }
