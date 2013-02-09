@@ -58,7 +58,7 @@
 				<dt><label for="profile_name">{$aLang.settings_profile_name}:</label></dt>
 				<dd>
 					<input type="text" name="profile_name" id="profile_name" value="{$oUserCurrent->getProfileName()|escape:'html'}" class="span3">
-					<span class="help-block span3"><small>{$aLang.settings_profile_name_notice}</small></span>
+					<span class="help-block span4"><small>{$aLang.settings_profile_name_notice}</small></span>
 				</dd>
 			</dl>
 		

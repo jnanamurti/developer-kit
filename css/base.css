@@ -73,4 +73,4 @@ a.link-dotted:hover { color: #005580; border-color: #005580; text-decoration: no
 .help .help-item 			{ margin-bottom: 20px; }
 .help .help-item:last-child { margin-bottom: 0; }
 
-.help-block.span3 			{ margin-left: 0; }
+.help-block.span4 			{ margin-left: 0; }

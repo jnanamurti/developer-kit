@@ -2,7 +2,10 @@
 
 $config = array();
 
+/* Theme */
 $config['view']['theme'] = 'default';
+
+
 
 
 $config['head']['default']['js'] = Config::Get('head.default.js');
@@ -14,6 +17,7 @@ $config['head']['default']['js'][] = '___path.static.skin___/bootstrap/js/bootst
 $config['head']['default']['css'] = array(
 	/* Framework */
 	"___path.static.skin___/bootstrap/css/bootstrap.min.css",
+	"___path.static.skin___/bootstrap/css/bootstrap-responsive.min.css",
 
 	/* Structure */
 	"___path.static.skin___/css/base.css",
@@ -38,6 +42,7 @@ $config['head']['default']['css'] = array(
 	"___path.static.skin___/css/infobox.css",
 	"___path.static.skin___/css/jquery.notifier.css",
 	"___path.static.skin___/css/smoothness/jquery-ui.css",
+	"___path.static.skin___/css/responsive.css",
 	
 	/* Theme */
 	"___path.static.skin___/themes/___view.theme___/style.css",

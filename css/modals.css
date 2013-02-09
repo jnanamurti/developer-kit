@@ -4,7 +4,6 @@
 
 .modal 				{ display: none; }
 .modal-body form 	{ margin-bottom: 0; }
-.modal 				{ width: 300px; margin-left: -150px; top: 50px; }
 
 
 .jqmOverlay 	{ background-color: #000; }
@@ -12,12 +11,10 @@
 
 
 /* Форма входа */
-.modal.modal-login 				{ width: 450px; margin-left: -225px; top: 50px; }
 .modal.modal-login .modal-body 	{ max-height: 600px; }
 
 
 /* Добавление топика */
-.modal.modal-write 									{ width: 690px; margin-left: -345px; top: 50px; }
 .modal.modal-write .write-list li 					{ text-align: center; }
 .modal.modal-write .write-list li .write-item-image { display: block; width: 100px; height: 100px; background: url(../images/write.png) no-repeat; margin-bottom: 10px; }
 
@@ -27,7 +24,3 @@
 .modal.modal-write .write-list li.write-item-type-photoset .write-item-image 	{ background-position: -300px 0; }
 .modal.modal-write .write-list li.write-item-type-blog .write-item-image 		{ background-position: -400px 0; }
 .modal.modal-write .write-list li.write-item-type-draft .write-item-image 		{ background-position: -500px 0; }
-
-
-/* Upload Image */
-.modal-image-upload { width: 450px; margin-left: -225px; }
