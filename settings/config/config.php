@@ -8,12 +8,12 @@ $config['view']['theme'] = 'default';
 $config['head']['default']['js'] = Config::Get('head.default.js');
 $config['head']['default']['js'][] = '___path.static.skin___/js/template.js';
 /* Framework */
-$config['head']['default']['js'][] = '___path.static.skin___/bootstrap/js/bootstrap.js';
+$config['head']['default']['js'][] = '___path.static.skin___/bootstrap/js/bootstrap.min.js';
 
 
 $config['head']['default']['css'] = array(
 	/* Framework */
-	"___path.static.skin___/bootstrap/css/bootstrap.css",
+	"___path.static.skin___/bootstrap/css/bootstrap.min.css",
 
 	/* Structure */
 	"___path.static.skin___/css/base.css",
