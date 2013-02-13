@@ -112,7 +112,7 @@
 		
 			<div role="main" 
 				class="span8 content 
-					   {if $noSidebar}content-full-width{/if} 
+					   {if $noSidebar}span12{else}span8{/if} 
 					   {if $sidebarPosition == 'left'}content-right{/if}"
 				{if $sMenuItemSelect=='profile'}itemscope itemtype="http://data-vocabulary.org/Person"{/if}>
 				
