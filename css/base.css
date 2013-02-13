@@ -37,7 +37,7 @@ a.link-dotted:hover { color: #005580; border-color: #005580; text-decoration: no
 
 /* Stat
 ---------------------------------------------------- */
-.stat-performance 			{ padding: 20px 0; }
+.stat-performance 			{ padding-top: 20px; padding-bottom: 20px; }
 .stat-performance table td 	{ width: 200px; vertical-align: top; }
 
 
