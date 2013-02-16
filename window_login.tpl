@@ -16,7 +16,7 @@
 		</script>
 		
 		<div class="modal-body">
-			<ul class="nav nav-pills">
+			<ul class="nav nav-tabs">
 				<li class="active js-block-popup-login-item" data-type="login"><a href="#">{$aLang.user_login_submit}</a></li>
 				{if !$oConfig->GetValue('general.reg.invite')}
 					<li class="js-block-popup-login-item" data-type="registration"><a href="#">{$aLang.registration}</a></li>
